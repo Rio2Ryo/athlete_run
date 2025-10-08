@@ -67,7 +67,7 @@ export default function Hero() {
               filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(34, 197, 94, 0.2))',
             }}
           >
-            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-medium leading-tight">
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight">
               <div>MOTHER VEGETABLE PROJECT</div>
             </h1>
           </div>
