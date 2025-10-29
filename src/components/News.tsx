@@ -7,7 +7,7 @@ export default function News() {
   const { language } = useLanguage()
 
   return (
-    <div className="w-full bg-black py-6">
+    <div className="w-full bg-black pt-6 pb-14 lg:pb-20">
       <div className="w-[95%] lg:max-w-[1200px] mx-auto px-4">
         <div className="border-2 border-green-500 rounded-lg bg-green-500/5 p-8 lg:p-12">
           <div className="flex flex-col gap-7">
