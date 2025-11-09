@@ -1,9 +1,37 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useState, useEffect } from 'react'
 
 export default function TokenInfo() {
   const { t } = useLanguage()
+  const [countdown, setCountdown] = useState('')
+
+  useEffect(() => {
+    const targetDate = new Date('2025-11-11T11:00:00Z') // UTC time
+
+    const updateCountdown = () => {
+      const now = new Date()
+      const difference = targetDate.getTime() - now.getTime()
+
+      if (difference <= 0) {
+        setCountdown('Launched!')
+        return
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000)
+
+      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`)
+    }
+
+    updateCountdown() // Initial update
+    const interval = setInterval(updateCountdown, 1000) // Update every second
+
+    return () => clearInterval(interval) // Cleanup on unmount
+  }, [])
   const downloadWhitepaper = () => {
     const link = document.createElement('a')
     link.href = '/0912_whitepaper_ja.pdf'
@@ -64,7 +92,7 @@ directly connected to Mother Vegetable factories, providing core utilities.`
             </div>
              <div className="text-center">
               <p className="text-gray-400 text-sm mb-2">{t({ JP: '上場日', EN: 'Listing date' })}</p>
-              <p className="text-white font-bold text-lg">November 11, 2025 on 11:00 (UTC)</p>
+              <p className="text-white font-bold text-lg">{countdown || 'Calculating...'}</p>
             </div>
             <div className="text-center">
               <p className="text-gray-400 text-sm mb-2">{t({ JP: '総発行量', EN: 'Total Supply' })}</p>
