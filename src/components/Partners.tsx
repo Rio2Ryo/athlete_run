@@ -211,14 +211,14 @@ export default function Partners() {
       }),
       image: "/leon.jpeg"
     },
-    {
-      name: t({ JP: "JTB総合研究所", EN: "JTB Research Institute" }),
-      description: t({
-        JP: "JTBツーリズムリサーチ＆コンサルティング：日本最大の旅行代理店であり、世界最大級の旅行代理店の1つ。海洋産業の推進とエデングリーン関連製品の事業開発支援のためのパートナーシップ",
-        EN: "JTB Tourism Research & Consulting: Japan's largest travel agency and one of the world's largest. Partnership for promoting marine industry and supporting business development of Eden Green-related products."
-      }),
-      image: "/jtb-logo.svg"
-    },
+    // {
+    //   name: t({ JP: "JTB総合研究所", EN: "JTB Research Institute" }),
+    //   description: t({
+    //     JP: "JTBツーリズムリサーチ＆コンサルティング：日本最大の旅行代理店であり、世界最大級の旅行代理店の1つ。海洋産業の推進とエデングリーン関連製品の事業開発支援のためのパートナーシップ",
+    //     EN: "JTB Tourism Research & Consulting: Japan's largest travel agency and one of the world's largest. Partnership for promoting marine industry and supporting business development of Eden Green-related products."
+    //   }),
+    //   image: "/jtb-logo.svg"
+    // },
     {
       name: t({ JP: "九州電工", EN: "Kyushu Denko" }),
       description: t({
