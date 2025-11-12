@@ -70,18 +70,14 @@ the following can be created:`
                 </p>
 
                 <div className="space-y-2">
-                  <p className="text-gray-300 text-sm md:text-base">
-                    <span className="text-green-400 font-semibold inline-block w-40">{t({ JP: '①食品', EN: '①Food' })}</span>
-                    <span className="text-white">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品', EN: 'Foods containing 48 essential nutrients from a single life form' })}</span>
-                  </p>
-                  <p className="text-gray-300 text-sm md:text-base">
-                    <span className="text-green-400 font-semibold inline-block w-40">{t({ JP: '②スキンケア', EN: '②Skincare' })}</span>
-                    <span className="text-white">{t({ JP: '皮膚の再生に効果のあるスキンケア', EN: 'Skincare effective for skin regeneration' })}</span>
-                  </p>
-                  <p className="text-gray-300 text-sm md:text-base">
-                    <span className="text-green-400 font-semibold inline-block w-40">{t({ JP: '③魚貝類の養殖', EN: '③Aquaculture' })}</span>
-                    <span className="text-white">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖', EN: 'Aquaculture of fish and shellfish without any chemicals' })}</span>
-                  </p>
+                  <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '①食品', EN: '①Food' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品', EN: 'Foods containing 48 essential nutrients from a single life form' })}</p>
+
+                  <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②スキンケア', EN: '②Skincare' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア', EN: 'Skincare effective for skin regeneration' })}</p>
+
+                  <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③魚貝類の養殖', EN: '③Aquaculture' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖', EN: 'Aquaculture of fish and shellfish without any chemicals' })}</p>
                 </div>
               </div> 
              
