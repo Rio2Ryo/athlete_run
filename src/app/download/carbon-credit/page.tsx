@@ -12,7 +12,7 @@ export default function CarbonCreditDownloadPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (password === 'mv123') {
+    if (password === 'mvt123') {
       setIsAuthenticated(true)
       setError('')
     } else {
