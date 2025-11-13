@@ -19,16 +19,16 @@ export default function ProjectOverview() {
             {/* Desktop View */}
             <p className="hidden md:block leading-[2] whitespace-pre-line">
               {t({
-                JP: `MOTHER VEGETABLE PROJECTは\n2つのオンリーワン事業を中心として地球とすべての生命の回復・修正を目指す画期的なプロジェクトです。\n\nこのプロセスにおいて、各施設は24時間365日CO2を吸収し酸素を生成することで大気を浄化し、\n同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。\n\nまたその施設を世界各地に展開することで、さらに8つの産業分野に発展します。`,
-                EN: `The MOTHER VEGETABLE PROJECT is\na groundbreaking project that aims to restore and revitalize the Earth and all life,\ncentered around two unique businesses.\n\nThrough this process, each facility purifies the atmosphere by absorbing CO₂\nand generating oxygen 24 hours a day, 365 days a year,\nwhile simultaneously contributing to improving the health of humans\nand living organisms through Mother Vegetable products and aquaculture of fish and shellfish.\n\nFurthermore, by expanding these facilities around the world,\nit will develop into eight additional industrial sectors.`
+                JP: `MOTHER VEGETABLE PROJECTは\n2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。\n\nこのプロセスにおいて、各施設は24時間365日CO2を吸収し酸素を生成することで大気を浄化し、\n同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。\n\nまたその施設を世界各地に展開することで、さらに8つの産業分野に発展します。`,
+                EN: `The MOTHER VEGETABLE PROJECT is\nthe world's only project that aims to restore the Earth and all life,\ncentered around two one-of-a-kind businesses.\n\nIn this process, each facility purifies the atmosphere by absorbing CO₂\nand generating oxygen 24 hours a day, 365 days a year,\nwhile simultaneously contributing to improving the health of humans\nand living organisms through Mother Vegetable products and the aquaculture of fish and shellfish.\n\nFurthermore, by expanding these facilities around the world,\nit will develop into eight additional industrial sectors.`
               })}
             </p>
 
             {/* Mobile View */}
             <p className="block md:hidden leading-[2] whitespace-pre-line">
               {t({
-               JP: `MOTHER VEGETABLE PROJECTは\n2つのオンリーワン事業を中心として\n地球とすべての生命の回復・修正を目指す\n画期的なプロジェクトです。\n\nこのプロセスにおいて、\n各施設は24時間365日CO2を吸収し\n酸素を生成することで大気を浄化し、\n同時に生成されるマザーベジタブル製品\nおよび魚貝類の養殖業により、\n人間と生物の健康向上に貢献します。\n\nまたその施設を世界各地に展開することで、\nさらに8つの産業分野に発展します。`,
-                EN: `The MOTHER VEGETABLE PROJECT is\na groundbreaking project that aims to restore\nand revitalize the Earth and all life,\ncentered around two unique businesses.\n\nThrough this process,\neach facility purifies the atmosphere\nby absorbing CO₂ and generating oxygen\n24 hours a day, 365 days a year,\nwhile simultaneously contributing to\nimproving the health of humans\nand living organisms through\nMother Vegetable products\nand aquaculture of fish and shellfish.\n\nFurthermore, by expanding\nthese facilities around the world,\nit will develop into\neight additional industrial sectors.`
+               JP: `MOTHER VEGETABLE PROJECTは\n2つのオンリーワン事業を中心として\n地球とすべての生命の回復を目指す\n世界唯一のプロジェクトです。\n\nこのプロセスにおいて、\n各施設は24時間365日CO2を吸収し\n酸素を生成することで大気を浄化し、\n同時に生成されるマザーベジタブル製品\nおよび魚貝類の養殖業により、\n人間と生物の健康向上に貢献します。\n\nまたその施設を世界各地に展開することで、\nさらに8つの産業分野に発展します。`,
+                EN: `The MOTHER VEGETABLE PROJECT is\nthe world's only project that aims to restore\nthe Earth and all life,\ncentered around two one-of-a-kind businesses.\n\nIn this process,\neach facility purifies the atmosphere\nby absorbing CO₂ and generating oxygen\n24 hours a day, 365 days a year,\nwhile simultaneously contributing to\nimproving the health of humans\nand living organisms through\nMother Vegetable products\nand the aquaculture of fish and shellfish.\n\nFurthermore, by expanding\nthese facilities around the world,\nit will develop into\neight additional industrial sectors.`
               })}
             </p>
           </div>
@@ -51,12 +51,17 @@ export default function ProjectOverview() {
               {/* 地球最初の生命体とは */}
               <div className="p-6 bg-green-500/10 border border-green-500/30 rounded-lg flex-grow">
                 <div className="flex justify-center my-6">
-                  <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-lg">
-                    <img
-                      src="/mazavege.png"
-                      alt="マザーベジタブル"
-                      className="w-full h-full object-cover"
-                    />
+                  <div>
+                    <h3 className="text-green-400 text-xl md:text-2xl font-semibold text-center mb-10">
+                      {t({ JP: 'マザーベジタブル', EN: 'Mother Vegetable' })}
+                    </h3>
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-lg">
+                      <img
+                        src="/mazavege.png"
+                        alt="マザーベジタブル"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -98,20 +103,26 @@ the following can be created:`
 
                {/* 驚異的なカーボンクレジット */}
               <div className="p-6 bg-green-500/10 border border-green-500/30 rounded-lg flex-grow">
-                <div className="flex flex-col md:flex-row justify-center gap-4 my-6">
-                  <div className="w-full md:max-w-xs h-48 rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src="/mv-factory-whole.jpg"
-                      alt="MOTHER VEGETABLE培養システム"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="w-full md:max-w-xs h-48 rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src="/mv-factory-greenhouse.jpg"
-                      alt="MOTHER VEGETABLEファクトリー建物"
-                      className="w-full h-full object-cover"
-                    />
+                <div className="my-6">
+                  <h3 className="text-green-400 text-xl md:text-2xl font-semibold text-center mb-10">
+                    Small Earth Factory (SEF)
+                  </h3>
+                  <div className="flex flex-col md:flex-row justify-center gap-4">
+                    <div className="w-full md:max-w-xs h-48 rounded-xl overflow-hidden shadow-lg">
+                      <img
+                        src="/mv-factory-whole.jpg"
+                        alt="MOTHER VEGETABLE培養システム"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div className="w-full md:max-w-xs h-48 rounded-xl overflow-hidden shadow-lg">
+                      <img
+                        src="/mv-factory-greenhouse.jpg"
+                        alt="MOTHER VEGETABLEファクトリー建物"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
 
