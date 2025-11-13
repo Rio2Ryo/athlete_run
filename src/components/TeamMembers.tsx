@@ -41,9 +41,7 @@ export default function TeamMembers() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-blue-500/20 border border-blue-500/50 text-blue-400 px-4 py-2 rounded-full text-sm mb-12">
-            {t({ JP: '1. チームメンバー', EN: '1. Team Members' })}
-          </span>
+        
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             {t({ JP: 'コアメンバー', EN: 'Core Members' })}
           </h2>
