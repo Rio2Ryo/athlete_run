@@ -66,20 +66,20 @@ export default function ProjectOverview() {
                 <p className="text-gray-300 leading-[1.9] whitespace-pre-line mb-4 text-sm md:text-base">
                   {t({
                     JP: `地球最初の植物であるマザーベジタブルが人類に至った進化を研究し以下の3種類のマザーベジタブルを提供します。`,
-                    EN: `By researching the evolution of Mother Vegetable, Earth's first plant, that led to humanity,
+                    EN: `By researching the evolutionary journey of Mother Vegetable, Earth's first vegetable, which culminated in humanity,
 we offer the following three types of Mother Vegetable products:`
                   })}
                 </p>
 
                 <div className="space-y-2">
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '①食品', EN: '①Food' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品。', EN: 'Food containing 48 types of nutrients necessary for humanity from a single life form.' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品。', EN: 'Food derived from a single life form that provides all 48 nutrients essential for humanity.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②スキンケア', EN: '②Skincare' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア。', EN: 'Skincare products effective for skin regeneration.' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア。', EN: 'Skincare products designed to promote reverse aging effects for the skin.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③魚貝類の養殖', EN: '③Aquaculture' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖。', EN: 'Aquaculture of high-protein fish and shellfish without using any chemicals.' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖。', EN: 'Aquaculture of high-protein fish and shellfish raised with zero chemical inputs.' })}</p>
                 </div>
               </div> 
              
@@ -128,7 +128,7 @@ we offer the following three types of Mother Vegetable products:`
                   <p className="text-white mb-3 text-sm md:text-base">{t({ JP: 'マザーベジタブル生産によるCO2の吸収（天然スギの700倍）およびO2の排出により小さな地球を再現。', EN: 'Recreating a small Earth through CO2 absorption (700 times that of natural cedar) and O2 emission by Mother Vegetable production.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②ZERO Carbon Energy', EN: '②ZERO Carbon Energy' })}</p>
-                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: '外部電力、化石燃料などCO2を排出するエネルギーを一切使用しなく、小さな地球を再現。', EN: 'Recreating a small Earth without using any CO2-emitting energy such as external electricity and fossil fuels.' })}</p>
+                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: '外部電力、化石燃料などCO2を排出するエネルギーを一切使用しなく、小さな地球を再現。', EN: 'Recreating a small Earth without relying on any CO₂-emitting energy sources, including external electricity or fossil fuels.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③カーボンクレジットの試算表', EN: '③Carbon Credit Estimation Table' })}</p>
                   <p className="text-white text-sm md:text-base">{t({ JP: 'SEF 1 unit / 26m x 16m x 10階建 は面積にすると約0.5 ヘクタール。', EN: 'SEF 1 unit / 26m x 16m x 10 layers has an area of approximately 0.5 hectares.' })}</p>
