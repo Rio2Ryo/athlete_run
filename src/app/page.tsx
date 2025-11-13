@@ -38,6 +38,20 @@ export default function Home() {
         {/*<News />*/}
         {/*<FAQ />*/}
         <Footer />
+
+        {/* Mazavege-chan Fixed GIF */}
+        <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center">
+          <img
+            src="/mazavegechan.gif"
+            alt="Mazavege-chan"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full"
+          />
+          <div className="text-white text-xs md:text-sm text-center mt-2">
+            <p>Mazavege-chan</p>
+            <p>AI Agent</p>
+            <p>Coming Soon</p>
+          </div>
+        </div>
       </main>
     </>
   )
