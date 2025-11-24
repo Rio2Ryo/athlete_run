@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-black">
-       <div className="bg-gray-900/50 backdrop-blur-md border border-green-500/20 rounded-xl p-8 mb-16 mx-auto max-w-[1280px]">
+       <div className="bg-gray-900/50 backdrop-blur-md border border-green-500/20 rounded-xl p-8 mb-16 mx-auto max-w-[95%]">
         {/* Logo */}
         <div className="flex justify-center mb-4">
           <Image
