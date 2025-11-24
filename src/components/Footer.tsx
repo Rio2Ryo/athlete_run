@@ -19,11 +19,53 @@ export default function Footer() {
 
   return (
     <footer className="bg-black">
-      {/* Main Footer Content */}
+       <div className="bg-gray-900/50 backdrop-blur-md border border-green-500/20 rounded-xl p-8 mb-16">
+        {/* Leaf Icon */}
+        <div className="flex justify-center mb-4">
+          <svg className="w-12 h-12 text-green-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C12 2 7 4 7 12C7 16 9 20 12 22C15 20 17 16 17 12C17 4 12 2 12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 2C12 2 17 4 17 12C17 16 15 20 12 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 8C12 8 14 9 14 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          </svg>
+        </div>
+
+        {/* Title */}
+        <h2 className="text-2xl md:text-3xl font-bold text-green-400 text-center mb-2">Mother Vegetable Group</h2>
+
+        {/* Decorative underline */}
+        <div className="w-32 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto mb-8"></div>
+
+        {/* Countries Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
+          <div className="text-green-400 text-base md:text-lg font-medium">Japan</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Switzerland</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Malaysia</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Thailand</div>
+
+          <div className="text-green-400 text-base md:text-lg font-medium">Germany</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">USA</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">South Korea</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">United Kingdom</div>
+
+          <div className="text-green-400 text-base md:text-lg font-medium">Singapore</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Mongolia</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Italy</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Brazil</div>
+
+          <div className="text-green-400 text-base md:text-lg font-medium">Hong Kong</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Indonesia</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Australia</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">France</div>
+
+          <div className="text-green-400 text-base md:text-lg font-medium">Canada</div>
+          <div className="text-green-400 text-base md:text-lg font-medium">Peru</div>
+        </div>
+       </div>
+      {/* Main Footer Content 
       <div className="container mx-auto px-4 py-12">
         <div className="w-full md:w-full h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-0 opacity-80 mb-14"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Japan Office */}
+          
           <div className="text-center md:text-left">
             <h3 className="text-green-400 font-semibold text-base md:text-lg mb-3 md:mb-4">Japan Office</h3>
             <p className="text-white text-xs md:text-sm leading-relaxed">
@@ -34,7 +76,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Malaysia Office */}
+          
           <div className="text-center md:text-left">
             <h3 className="text-green-400 font-semibold text-base md:text-lg mb-3 md:mb-4">Malaysia Office</h3>
             <p className="text-white text-xs md:text-sm leading-relaxed">
@@ -42,7 +84,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Singapore Office */}
+          
           <div className="text-center md:text-left">
             <h3 className="text-green-400 font-semibold text-base md:text-lg mb-3 md:mb-4">Singapore Office</h3>
             <p className="text-white text-xs md:text-sm leading-relaxed">
@@ -50,7 +92,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Hong Kong Office */}
+         
           <div className="text-center md:text-left">
             <h3 className="text-green-400 font-semibold text-base md:text-lg mb-3 md:mb-4">Hong Kong Office</h3>
             <p className="text-white text-xs md:text-sm leading-relaxed">
@@ -59,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full md:w-full h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-14 opacity-80 mb-6"></div>
-      </div>
+      </div>*/}
 
       {/* Legal Links & Copyright */}
       <div className="">
