@@ -80,6 +80,23 @@ export default function Footer() {
         {/* Title */}
         <h3 className="text-[clamp(8px,2vw,10px)] md:text-sm font-bold text-[#25C760] text-center mb-3">Mother Vegetable Group</h3>
 
+        {/* Official Page Link */}
+        <a
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault()
+            const homeSection = document.getElementById('home')
+            if (homeSection) {
+              homeSection.scrollIntoView({ behavior: 'smooth' })
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }
+          }}
+          className="block text-[clamp(8px,2vw,10px)] md:text-sm font-medium text-[#25C760] text-center mb-3 hover:underline cursor-pointer"
+        >
+          Official Page
+        </a>
+
         {/* Countries Grid - 3 rows on mobile, one line on desktop */}
         <div className="grid grid-cols-6 md:hidden gap-x-1 gap-y-1 mx-auto text-center max-w-5xl">
           <div className="text-[#25C760] text-[clamp(8px,2vw,10px)] font-medium whitespace-nowrap tracking-tighter">Japan</div>

@@ -8,6 +8,7 @@ interface Partner {
   description: string;
   image: string;
   subtitle?: string;
+  url?: string;
 }
 
 export default function Partners() {
@@ -187,13 +188,13 @@ export default function Partners() {
       }),
       image: "/healcom.jpeg"
     },
-    {
-      name: t({ JP: "全国姉妹漁業振興協議会株式会社", EN: "National Sister Fisheries Promotion Council Inc." }),
+   {
+      name: t({ JP: "黒井漁業協同組合", EN: "Kuroi Fishery Cooperative" }),
       description: t({
-        JP: "河津町との連携による海洋事業開発とMother Vegetable事業の推進。全国の漁業組合の連絡窓口を実施。",
-        EN: "Promoting marine business development and Mother Vegetable business through collaboration with Kawazu Town. Implementing communication channels for fishery associations nationwide."
+        JP: "日本の下関市に位置する漁協組合：磯焼けによる空ウニの大量発生や養殖に対して課題を持っており、MOTHER VEGETABLEを活用することで局所的な磯焼け解決や効率的な養殖を進めている。",
+        EN: "Fishery cooperative located in Shimonoseki City, Japan: Facing challenges with mass occurrence of empty sea urchins due to rocky shore denudation and aquaculture, advancing local rocky shore denudation solutions and efficient aquaculture using MOTHER VEGETABLE."
       }),
-      image: "/sfc.jpeg"
+      image: "/kuroi-fishery-DSW6ddl8.jpeg"
     },
     {
       name: t({ JP: "日本PTA", EN: "Japan PTA" }),
@@ -228,13 +229,15 @@ export default function Partners() {
       image: "/Kyushudenko.jpeg"
     },
     {
-      name: t({ JP: "黒井漁業協同組合", EN: "Kuroi Fishery Cooperative" }),
+      name: t({ JP: "全国姉妹漁業振興協議会株式会社", EN: "National Sister Fisheries Promotion Council Inc." }),
       description: t({
-        JP: "日本の下関市に位置する漁協組合：磯焼けによる空ウニの大量発生や養殖に対して課題を持っており、MOTHER VEGETABLEを活用することで局所的な磯焼け解決や効率的な養殖を進めている。",
-        EN: "Fishery cooperative located in Shimonoseki City, Japan: Facing challenges with mass occurrence of empty sea urchins due to rocky shore denudation and aquaculture, advancing local rocky shore denudation solutions and efficient aquaculture using MOTHER VEGETABLE."
+        JP: "河津町との連携による海洋事業開発とMother Vegetable事業の推進。全国の漁業組合の連絡窓口を実施。",
+        EN: "Promoting marine business development and Mother Vegetable business through collaboration with Kawazu Town. Implementing communication channels for fishery associations nationwide."
       }),
-      image: "/kuroi-fishery-DSW6ddl8.jpeg"
+      image: "/sfc.jpeg",
+      url: "https://www.nsfpcouncil.com/"
     },
+    
      // {
      // name: "MO",
      // description: t({
@@ -442,29 +445,47 @@ export default function Partners() {
             {t({ JP: 'その他の提携組織・プロジェクト', EN: 'Other Partner Organizations & Projects' })}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {otherPartners.map((partner, index) => (
-              <div
-                key={index}
-                className="bg-gray-800/50 backdrop-blur-md border border-gray-700/50 rounded-xl p-6 text-center hover:border-orange-500/50 transition-all duration-300 hover:scale-105"
-              >
-                <div className="relative w-40 h-40 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-white via-gray-50 to-gray-100 shadow-lg overflow-hidden">
-                  <Image
-                    src={partner.image}
-                    alt={partner.name}
-                    fill
-                    className="object-contain p-4 drop-shadow-md"
-                    quality={100}
-                    priority
-                    sizes="(max-width: 768px) 160px, 160px"
-                  />
+            {otherPartners.map((partner, index) => {
+              const CardContent = (
+                <>
+                  <div className="relative w-40 h-40 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-white via-gray-50 to-gray-100 shadow-lg overflow-hidden">
+                    <Image
+                      src={partner.image}
+                      alt={partner.name}
+                      fill
+                      className="object-contain p-4 drop-shadow-md"
+                      quality={100}
+                      priority
+                      sizes="(max-width: 768px) 160px, 160px"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2">{partner.name}</h4>
+                  {(partner as Partner).subtitle && (
+                    <p className="text-orange-400 text-sm font-semibold mb-3">{(partner as Partner).subtitle}</p>
+                  )}
+                  <p className="text-gray-300 text-xs leading-[1.8]">{partner.description}</p>
+                </>
+              )
+
+              return (partner as Partner).url ? (
+                <a
+                  key={index}
+                  href={(partner as Partner).url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800/50 backdrop-blur-md border border-gray-700/50 rounded-xl p-6 text-center hover:border-orange-500/50 transition-all duration-300 hover:scale-105 block cursor-pointer"
+                >
+                  {CardContent}
+                </a>
+              ) : (
+                <div
+                  key={index}
+                  className="bg-gray-800/50 backdrop-blur-md border border-gray-700/50 rounded-xl p-6 text-center hover:border-orange-500/50 transition-all duration-300 hover:scale-105"
+                >
+                  {CardContent}
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">{partner.name}</h4>
-                {(partner as Partner).subtitle && (
-                  <p className="text-orange-400 text-sm font-semibold mb-3">{(partner as Partner).subtitle}</p>
-                )}
-                <p className="text-gray-300 text-xs leading-[1.8]">{partner.description}</p>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>
