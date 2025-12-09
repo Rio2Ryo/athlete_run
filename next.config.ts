@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
         destination: "https://confidence-htu.vercel.app/confidence-howto/:path*",
       },
 
-      // ★ 追加: /athlete → mvathletefoundation.vercel.app
+      //  追加: /athlete → mvathletefoundation.vercel.app
       {
         source: "/athlete",
         destination: "https://mvathletefoundation.vercel.app/athlete/",
