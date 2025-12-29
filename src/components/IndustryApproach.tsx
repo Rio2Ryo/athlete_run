@@ -56,7 +56,7 @@ export default function IndustryApproach() {
   ]
 
   return (
-    <section className="py-10 md:py-20 bg-black">
+    <section className="py-5 md:py-5 bg-black">
       <div
         className="mx-auto px-4 md:px-8 py-8 md:py-12 w-[97%] md:w-[90%]"
         style={{
@@ -116,7 +116,7 @@ export default function IndustryApproach() {
                   {/* Features */}
                   <div className="space-y-1 mb-2">
                     {product.features.map((feature, idx) => (
-                      <p key={idx} className="text-gray-300 text-xs md:text-xl flex items-start">
+                      <p key={idx} className="text-white text-xs md:text-lg flex items-start">
                         <span className="text-green-400 mr-1 md:mr-2">✓</span>
                         {feature}
                       </p>
@@ -126,7 +126,7 @@ export default function IndustryApproach() {
                   {/* How to use */}
                   <div className="mb-2 md:mt-10 md:mb-4">
                     <p className="text-green-400 font-semibold text-xs md:text-xl mb-1">How to use</p>
-                    <p className="text-gray-300 text-[10px] md:text-sm flex items-start">
+                    <p className="text-white text-[10px] md:text-sm flex items-start">
                       <span className="text-green-400 mr-1 md:mr-2">✓</span>
                       {product.howToUse}
                     </p>
@@ -143,7 +143,7 @@ export default function IndustryApproach() {
         <div className="space-y-3 md:space-y-2 text-center mt-8 md:mt-12">
           {trustItems.map((item, index) => (
             <div key={index} className="text-[10px] md:text-base">
-              <span className="text-red-400 font-semibold mr-4">{item.label}</span>
+              <span className="text-red-600 font-semibold mr-4">{item.label}</span>
               <span className="text-gray-300">{item.text}</span>
             </div>
           ))}
