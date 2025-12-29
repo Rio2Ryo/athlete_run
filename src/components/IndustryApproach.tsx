@@ -14,38 +14,32 @@ export default function IndustryApproach() {
         '便秘・睡眠改善、ダイエット効果',
       ],
       howToUse: "1スティックを飲み物や食事に'TORIKOMU'",
-      detailLink: '#',
-      shopLink: '#',
     },
     {
       id: 2,
       video: '/confidence_v2.mp4',
       title: 'Confidence',
-      subtitle: 'for Skin',
-      label: "'MAZEKOMU'",
-      description: '肌に必要な栄養を直接届ける',
+      subtitle: 'for All Skin',
+      label: "'SURIKOMU', 'MAZEKOMU'",
+      description: '肌の治癒効果',
       features: [
-        '肌のハリ・ツヤを改善',
-        'シミ・シワ予防、美白効果',
+        '即効性のある肌の細胞の再生',
+        'しみ、ニキビ、体臭、キズ、やけどを治癒',
       ],
-      howToUse: "化粧水や美容液に'MAZEKOMU'",
-      detailLink: '#',
-      shopLink: '#',
+      howToUse: "直接 'SURIKOMU' または コスメに 'MAZEKOMU'",
     },
     {
       id: 3,
       video: '/forever_video.mp4',
       title: 'Forever',
       subtitle: 'for Pet',
-      label: "'SURIKOMU'",
-      description: '頭皮と髪に栄養を浸透',
+      label: "'MAZEKOMU'",
+      description: 'ペットの健康寿命を延ばす',
       features: [
-        '頭皮環境を改善、発毛促進',
-        '髪のボリューム・ツヤを向上',
+        '涙やけ、腸内環境を改善',
+        '体臭・糞尿のにおい改善、食欲増加',
       ],
-      howToUse: "シャンプーやトリートメントに'SURIKOMU'",
-      detailLink: '#',
-      shopLink: '#',
+      howToUse: "ペットフードに1スティックを'MAZEKOMU'",
     },
   ]
 
@@ -86,37 +80,35 @@ export default function IndustryApproach() {
               {/* Mobile: Horizontal Layout / Desktop: Vertical Layout */}
               <div className="flex flex-row md:flex-col gap-3 md:gap-0">
                 {/* Video */}
-                <div className="flex-shrink-0 md:mb-4 md:flex md:justify-center">
+                <div className="flex-shrink-0 self-stretch md:self-auto md:mb-4 md:flex md:justify-center">
                   <video
                     src={product.video}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-24 h-32 md:w-28 md:h-52 object-cover rounded-lg"
+                    className="w-24 h-full md:w-28 md:h-52 object-cover rounded-lg"
                   />
                 </div>
 
                 {/* Text Content */}
                 <div className="flex-1 flex flex-col">
-                  {/* Title & Shop Link Row */}
-                  <div className="flex justify-between items-start mb-1">
-                    <div>
-                      <h3 className="text-lg md:text-3xl font-bold" style={{ color: '#25c760' }}>
-                        {product.title}
-                      </h3>
-                      <p className="text-red-600 text-xs md:text-sm">{product.subtitle}</p>
-                    </div>
-                                      </div>
+                  {/* Title & Subtitle */}
+                  <div className="mb-1 md:text-center">
+                    <h3 className="text-lg md:text-3xl font-bold" style={{ color: '#25c760' }}>
+                      {product.title}
+                    </h3>
+                    <p className="text-red-600 text-xs md:text-sm">{product.subtitle}</p>
+                  </div>
 
                   {/* Label & Description */}
-                  <p className="text-red-600 font-semibold text-xs md:text-sm">{product.label}</p>
-                  <p className="text-white text-[10px] md:text-sm mb-2">{product.description}</p>
+                  <p className="text-red-600 font-semibold text-xs md:text-sm md:text-center">{product.label}</p>
+                  <p className="text-white text-[10px] md:text-sm mb-2 md:text-center">{product.description}</p>
 
                   {/* Features */}
                   <div className="space-y-1 mb-2">
                     {product.features.map((feature, idx) => (
-                      <p key={idx} className="text-white text-xs md:text-lg flex items-start">
+                      <p key={idx} className="text-white text-[10px] md:text-lg flex items-start">
                         <span className="text-green-400 mr-1 md:mr-2">✓</span>
                         {feature}
                       </p>
