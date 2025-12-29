@@ -36,7 +36,7 @@ export default function IndustryApproach() {
       id: 3,
       video: '/forever_video.mp4',
       title: 'Forever',
-      subtitle: 'forستyle',
+      subtitle: 'for Pet',
       label: "'SURIKOMU'",
       description: '頭皮と髪に栄養を浸透',
       features: [
@@ -84,14 +84,14 @@ export default function IndustryApproach() {
               style={{ border: '1px solid #25c760' }}
             >
               {/* Video */}
-              <div className="mb-4 rounded-lg overflow-hidden">
+              <div className="mb-4 flex justify-center">
                 <video
                   src={product.video}
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="w-full h-40 md:h-48 object-cover"
+                  className="w-32 md:w-40 h-44 md:h-52 object-cover rounded-lg"
                 />
               </div>
 
@@ -102,13 +102,13 @@ export default function IndustryApproach() {
               <p className="text-gray-400 text-sm text-center mb-3">{product.subtitle}</p>
 
               {/* Label & Description */}
-              <p className="text-red-400 font-semibold text-center text-sm">{product.label}</p>
-              <p className="text-gray-300 text-center text-xs md:text-sm mb-4">{product.description}</p>
+              <p className="text-red-600 font-semibold text-center text-sm">{product.label}</p>
+              <p className="text-red-600 text-center text-xs md:text-sm mb-4">{product.description}</p>
 
               {/* Features */}
               <div className="space-y-2 mb-4">
                 {product.features.map((feature, idx) => (
-                  <p key={idx} className="text-gray-300 text-xs md:text-sm flex items-start">
+                  <p key={idx} className="text-gray-300 text-base md:text-sm flex items-start">
                     <span className="text-green-400 mr-2">✓</span>
                     {feature}
                   </p>
@@ -117,7 +117,7 @@ export default function IndustryApproach() {
 
               {/* How to use */}
               <div className="mb-4">
-                <p className="text-green-400 font-semibold text-sm mb-1">How to use</p>
+                <p className="text-green-400 font-semibold text-base mb-1">How to use</p>
                 <p className="text-gray-300 text-xs md:text-sm flex items-start">
                   <span className="text-green-400 mr-2">✓</span>
                   {product.howToUse}
