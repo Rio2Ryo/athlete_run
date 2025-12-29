@@ -91,7 +91,7 @@ export default function IndustryApproach() {
                   loop
                   muted
                   playsInline
-                  className="w-28 md:w-36 h-44 md:h-52 object-cover rounded-lg"
+                  className="w-20 md:w-28 h-44 md:h-52 object-cover rounded-lg"
                 />
               </div>
 
