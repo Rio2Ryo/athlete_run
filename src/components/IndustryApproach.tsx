@@ -50,9 +50,9 @@ export default function IndustryApproach() {
   ]
 
   const trustItems = [
-    { label: 'TORIKOMU', text: 'means of having in Japanese as 「取り込む」' },
-    { label: 'MAZEKOMU', text: '厚生労働省から化粧品や医薬部外品原料規格として認定されています。means of having in Japanese as 「取り込む」' },
-    { label: 'SURIKOMU', text: 'means of rubbing in Japanese as 「擦り込む' },
+    { label: "'TORIKOMU'", text: 'means of having in Japanese as 「取り込む」' },
+    { label: "'MAZEKOMU'", text: 'means of mixing in Japanese as 「混ぜ込む」' },
+    { label: "'SURIKOMU'", text: 'means of rubbing in Japanese as 「擦り込む」' },
   ]
 
   return (
@@ -139,6 +139,16 @@ export default function IndustryApproach() {
                   ショップ <span className="ml-1">→</span>
                 </a>
               </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Trust Text */}
+        <div className="space-y-3 md:space-y-2 text-center mt-8 md:mt-12">
+          {trustItems.map((item, index) => (
+            <div key={index} className="text-[10px] md:text-base">
+              <span className="text-red-400 font-semibold mr-4">{item.label}</span>
+              <span className="text-gray-300">{item.text}</span>
             </div>
           ))}
         </div>
