@@ -72,7 +72,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-20 md:pt-48 lg:pt-56">
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-40 md:pt-48 lg:pt-56">
         {/* Title Section - Single Component */}
         <div className="mb-12">
 
@@ -109,7 +109,7 @@ export default function Hero() {
 
 
         {/* Description - Not in Box */}
-        <div className="max-w-4xl mx-auto mb-2 mt-16 px-4">
+        <div className="max-w-4xl mx-auto mb-2 mt-8 md:mt-16 px-4">
           <div className="space-y-3">
             <p className="text-xs md:text-xl text-[#4ade80] leading-relaxed">
               {t({
