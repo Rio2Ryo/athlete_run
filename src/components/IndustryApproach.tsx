@@ -80,52 +80,62 @@ export default function IndustryApproach() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="rounded-lg p-4 md:p-6 flex flex-col"
+              className="rounded-lg p-3 md:p-6"
               style={{ border: '1px solid #25c760' }}
             >
-              {/* Video */}
-              <div className="mb-4 flex justify-center">
-                <video
-                  src={product.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-20 md:w-28 h-44 md:h-52 object-cover rounded-lg"
-                />
+              {/* Mobile: Horizontal Layout / Desktop: Vertical Layout */}
+              <div className="flex flex-row md:flex-col gap-3 md:gap-0">
+                {/* Video */}
+                <div className="flex-shrink-0 md:mb-4 md:flex md:justify-center">
+                  <video
+                    src={product.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-24 h-32 md:w-28 md:h-52 object-cover rounded-lg"
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div className="flex-1 flex flex-col">
+                  {/* Title & Shop Link Row */}
+                  <div className="flex justify-between items-start mb-1">
+                    <div>
+                      <h3 className="text-lg md:text-3xl font-bold" style={{ color: '#25c760' }}>
+                        {product.title}
+                      </h3>
+                      <p className="text-red-600 text-xs md:text-sm">{product.subtitle}</p>
+                    </div>
+                                      </div>
+
+                  {/* Label & Description */}
+                  <p className="text-red-600 font-semibold text-xs md:text-sm">{product.label}</p>
+                  <p className="text-white text-[10px] md:text-sm mb-2">{product.description}</p>
+
+                  {/* Features */}
+                  <div className="space-y-1 mb-2">
+                    {product.features.map((feature, idx) => (
+                      <p key={idx} className="text-gray-300 text-xs md:text-xl flex items-start">
+                        <span className="text-green-400 mr-1 md:mr-2">✓</span>
+                        {feature}
+                      </p>
+                    ))}
+                  </div>
+
+                  {/* How to use */}
+                  <div className="mb-2 md:mt-10 md:mb-4">
+                    <p className="text-green-400 font-semibold text-xs md:text-xl mb-1">How to use</p>
+                    <p className="text-gray-300 text-[10px] md:text-sm flex items-start">
+                      <span className="text-green-400 mr-1 md:mr-2">✓</span>
+                      {product.howToUse}
+                    </p>
+                  </div>
+
+                                  </div>
               </div>
 
-              {/* Title & Subtitle */}
-              <h3 className="text-2xl md:text-3xl font-bold text-center" style={{ color: '#25c760' }}>
-                {product.title}
-              </h3>
-              <p className="text-red-600 text-sm text-center mb-3">{product.subtitle}</p>
-
-              {/* Label & Description */}
-              <p className="text-red-600 font-semibold text-center text-sm">{product.label}</p>
-              <p className="text-white text-center text-xs md:text-sm mb-4">{product.description}</p>
-
-              {/* Features */}
-              <div className="space-y-2 mb-4">
-                {product.features.map((feature, idx) => (
-                  <p key={idx} className="text-gray-300 text-xs md:text-sm flex items-start">
-                    <span className="text-green-400 mr-2">✓</span>
-                    {feature}
-                  </p>
-                ))}
-              </div>
-
-              {/* How to use */}
-              <div className="mt-10 mb-4">
-                <p className="text-green-400 font-semibold text-xl mb-1">How to use</p>
-                <p className="text-gray-300 text-xs md:text-sm flex items-start">
-                  <span className="text-green-400 mr-2">✓</span>
-                  {product.howToUse}
-                </p>
-              </div>
-
-         
-            </div>
+                          </div>
           ))}
         </div>
 
