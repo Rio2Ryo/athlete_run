@@ -98,7 +98,7 @@ export default function IndustryApproach() {
                     <h3 className="text-lg md:text-3xl font-bold" style={{ color: '#25c760' }}>
                       {product.title}
                     </h3>
-                    <p className="text-red-600 text-xs md:text-sm">{product.subtitle}</p>
+                    <p className="text-green-400 text-xs md:text-sm">{product.subtitle}</p>
                   </div>
 
                   {/* Label & Description */}
