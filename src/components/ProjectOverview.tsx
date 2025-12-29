@@ -45,7 +45,7 @@ export default function ProjectOverview() {
             <p className="hidden md:block leading-[2] whitespace-pre-line">
               {language === 'JP' ? (
                 <>
-                  MOTHER VEGETABLE PROJECTは{'\n'}2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。{'\n\n'}このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成することで大気を浄化し、{'\n'}同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。{'\n\n'}またその施設を世界各地に展開することで、さらに8つの産業分野に発展します。
+                  MOTHER VEGETABLE PROJECTは{'\n'}2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。{'\n\n'}このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成することで大気を浄化します。{'\n'}それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。{'\n\n'}またその施設を世界各地に展開することで、さらに8つの産業分野に発展することが可能です。
                 </>
               ) : (
                 <>
@@ -58,7 +58,7 @@ export default function ProjectOverview() {
             <p className="block md:hidden leading-[2] whitespace-pre-line">
               {language === 'JP' ? (
                 <>
-                  MOTHER VEGETABLE PROJECTは{'\n'}2つのオンリーワン事業を中心として{'\n'}地球とすべての生命の回復を目指す{'\n'}世界唯一のプロジェクトです。{'\n\n'}このプロセスにおいて、{'\n'}各施設は24時間365日CO<sub>2</sub>を吸収し{'\n'}酸素を生成することで大気を浄化し、{'\n'}同時に生成されるマザーベジタブル製品{'\n'}および魚貝類の養殖業により、{'\n'}人間と生物の健康向上に貢献します。{'\n\n'}またその施設を世界各地に展開することで、{'\n'}さらに8つの産業分野に発展します。
+                  MOTHER VEGETABLE PROJECTは{'\n'}2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。{'\n\n'}このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成することで大気を浄化します。{'\n'}それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。{'\n\n'}またその施設を世界各地に展開することで、さらに8つの産業分野に発展することが可能です。
                 </>
               ) : (
                 <>
@@ -116,8 +116,7 @@ we offer the following three types of Mother Vegetable products:`
                     <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②スキンケア', EN: '②Skincare' })}</p>
                     <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア。', EN: 'Skincare products designed to promote reverse aging effects for the skin.' })}</p>
 
-                    <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③魚貝類の養殖', EN: '③Aquaculture' })}</p>
-                    <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖。', EN: 'Aquaculture of high-protein fish and shellfish raised with zero chemical inputs.' })}</p>
+                  
                   </div>
                 </div>
 

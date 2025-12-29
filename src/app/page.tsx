@@ -31,9 +31,9 @@ export default function Home() {
         <Header />
         <Hero />
         <ProjectOverview />
-        <IndustryApproach />
-        <TeamMembers />
-        <Partners />
+        {/*<IndustryApproach />*/}
+        {/*<TeamMembers />*/}
+        {/*<Partners />*/}
         {/*<TokenInfo />*/}
         {/*<News />*/}
         {/*<FAQ />*/}

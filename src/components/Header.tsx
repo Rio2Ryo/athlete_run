@@ -46,18 +46,25 @@ export default function Header() {
 
           {/* Navigation Menu */}
           <nav className="flex items-center space-x-1 lg:space-x-2">
+             <button
+              onClick={() => window.location.href = 'https://mothervegetable.com/'}
+              className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300"
+            >
+              Food
+            </button>
+             <button
+              onClick={() => window.location.href = 'https://mothervegetable.com/'}
+              className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300"
+            >
+              Cosmetic
+            </button>
             <button
               onClick={() => window.location.href = 'https://mothervegetable.com/'}
               className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300"
             >
               Products
             </button>
-            <button
-              onClick={() => window.location.href = 'https://www.mothervegetable.org/athlete'}
-              className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300"
-            >
-              Athlete
-            </button>
+          
             <button
               onClick={() => setLanguage(language === 'EN' ? 'JP' : 'EN')}
               className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300 border border-gray-600 rounded-md"
