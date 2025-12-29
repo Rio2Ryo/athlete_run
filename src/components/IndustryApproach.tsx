@@ -108,7 +108,7 @@ export default function IndustryApproach() {
               {/* Features */}
               <div className="space-y-2 mb-4">
                 {product.features.map((feature, idx) => (
-                  <p key={idx} className="text-gray-300 text-xl md:text-sm flex items-start">
+                  <p key={idx} className="text-gray-300 text-xs md:text-sm flex items-start">
                     <span className="text-green-400 mr-2">✓</span>
                     {feature}
                   </p>

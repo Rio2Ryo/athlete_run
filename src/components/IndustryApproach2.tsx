@@ -17,7 +17,7 @@ export default function IndustryApproach() {
   ]
 
   return (
-    <section className="py-10 md:py-20 bg-black">
+    <section className="py-5 md:py-5 bg-black">
       <div
         className="mx-auto px-4 md:px-8 py-8 md:py-12 w-[97%] md:w-[90%]"
         style={{
