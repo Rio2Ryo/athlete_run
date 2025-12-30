@@ -89,60 +89,102 @@ export default function IndustryApproach() {
   // Before/Afterデータ
   const beforeAfterData = [
     {
-      title: '50代女性・3週間後',
-      description: '年を重ねるにつれて頬のシミが気になっていたのですが、3週間ほど塗い続けると、シミが目立たなくなり、肌もトーンアップして自信を持てるようになりました。',
+      title: language === 'JP' ? '50代女性・3週間後' : 'Female, 50s · After 3 weeks of use',
+      description: language === 'JP'
+        ? '年を重ねるにつれて頬のシミが気になっていたのですが、3週間ほど塗い続けると、シミが目立たなくなり、肌もトーンアップして自信を持てるようになりました。'
+        : 'As I got older, dark spots and under-eye shadows became more visible. After using this for a few weeks, my skin looked softer, brighter, and I felt confident again.',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '頬のシミが目立ち、メイク崩れも気になっていた。',
-      afterText: 'シミが目立たなくなり、自然なトーンアップを実現。メイクの持ちも良くなった。',
+      beforeText: language === 'JP'
+        ? '頬のシミが目立ち、メイク崩れも気になっていた。'
+        : 'Noticeable dark spots and under-eye circles, with makeup easily coming off by afternoon.',
+      afterText: language === 'JP'
+        ? 'シミが目立たなくなり、自然なトーンアップを実現。メイクの持ちも良くなった。'
+        : 'Spots appeared lighter and more diffused, giving a brighter, even-toned look. Foundation stayed on better and looked smoother.',
     },
     {
-      title: '80代女性・1ヶ月後',
-      description: 'ずっと治らなかったシミが、1ヶ月間塗り込んで使用すると徐々に薄くなり、大きなシミは気にならなくなりました。年を重ねても、Confidenceで適切にケアすれば改善するのを実感しました。',
+      title: language === 'JP' ? '80代女性・1ヶ月後' : 'Woman in her 80s · 1 month of use',
+      description: language === 'JP'
+        ? 'ずっと治らなかったシミが、1ヶ月間塗り込んで使用すると徐々に薄くなり、大きなシミは気にならなくなりました。年を重ねても、Confidenceで適切にケアすれば改善するのを実感しました。'
+        : 'The dark spots that had been prominent gradually faded, and my overall complexion became more even. I realized that even as we age, when we care for our skin properly, it truly responds.',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '腕にある複数のシミがずっと治らなかった。',
-      afterText: '大きなシミは完全に消えて、全体的にシミの色が薄くなった。',
+      beforeText: language === 'JP'
+        ? '腕にある複数のシミがずっと治らなかった。'
+        : 'Multiple dark spots on the arms and cheeks with an overall dull tone.',
+      afterText: language === 'JP'
+        ? '大きなシミは完全に消えて、全体的にシミの色が薄くなった。'
+        : 'Spots have lightened, skin tone looks more even, and firmness has returned for renewed confidence in bare skin.',
     },
     {
-      title: '40代女性・3日後',
-      description: '処方クリームに混ぜて使い始めると、3日後にはひび割れがなくなって、赤みが目立たなくなってきました。かゆみも少なくなって、今はすごく快適です。これからも使い続けます。',
+      title: language === 'JP' ? '40代女性・3日後' : 'Female, 40s · After 3 days of use',
+      description: language === 'JP'
+        ? '処方クリームに混ぜて使い始めると、3日後にはひび割れがなくなって、赤みが目立たなくなってきました。かゆみも少なくなって、今はすごく快適です。これからも使い続けます。'
+        : "I started using it together with my prescribed cream, and within three days the flakiness and redness noticeably improved. My skin felt smoother, less itchy, and much more comfortable. I'll definitely keep using it.",
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '乾燥による痒みやカサつきに悩んでいた。',
-      afterText: '痒みがおさまり、カサつきもなくなったので快適そうです。',
+      beforeText: language === 'JP'
+        ? '乾燥による痒みやカサつきに悩んでいた。'
+        : 'Visible dry patches and rough texture caused by dryness.',
+      afterText: language === 'JP'
+        ? '痒みがおさまり、カサつきもなくなったので快適そうです。'
+        : 'Redness visibly reduced, and small red spots became lighter and less noticeable.',
     },
     {
-      title: '10歳男の子・10日後',
-      description: 'カサつきと痒みに悩んでいましたが、ステロイドを使うのは避けたかったので、Confidenceでケアをしていました。すると、わずか10日で痒みやカサつきが治まり、今はすごく快適そうです。',
+      title: language === 'JP' ? '10歳男の子・10日後' : 'Male, age 10 · After 10 days of use',
+      description: language === 'JP'
+        ? 'カサつきと痒みに悩んでいましたが、ステロイドを使うのは避けたかったので、Confidenceでケアをしていました。すると、わずか10日で痒みやカサつきが治まり、今はすごく快適そうです。'
+        : 'We wanted to avoid using steroids, so we continued gentle daily care. In just 10 days, the flakiness and redness calmed down, and his skin looked much cleaner and smoother.',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '乾燥による痒みやカサつきに悩んでいた。',
-      afterText: '痒みがおさまり、カサつきもなくなったので快適そうです。',
+      beforeText: language === 'JP'
+        ? '乾燥による痒みやカサつきに悩んでいた。'
+        : 'Visible dry patches and rough texture caused by dryness.',
+      afterText: language === 'JP'
+        ? '痒みがおさまり、カサつきもなくなったので快適そうです。'
+        : 'Redness visibly reduced, and small red spots became lighter and less noticeable.',
     },
     {
-      title: '5歳男の子・2日後',
-      description: '硬水の刺激や乾燥で赤みが出ていましたが、ハンドクリームと一緒に使い始めると、たった2日で目に見えて症状が治まりました。',
+      title: language === 'JP' ? '5歳男の子・2日後' : 'Male, age 5 · After 2 days of use',
+      description: language === 'JP'
+        ? '硬水の刺激や乾燥で赤みが出ていましたが、ハンドクリームと一緒に使い始めると、たった2日で目に見えて症状が治まりました。'
+        : 'Because his hands were easily irritated by hard water, we used this together with hand cream. Within just two days, the roughness faded and his skin became noticeably smoother.',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '手首から手の甲にかけて目に見える赤みと乾燥。',
-      afterText: '赤みがなくなり、乾燥も抑えられました。',
+      beforeText: language === 'JP'
+        ? '手首から手の甲にかけて目に見える赤みと乾燥。'
+        : 'Visible redness and dryness from the wrist to the back of the hand.',
+      afterText: language === 'JP'
+        ? '赤みがなくなり、乾燥も抑えられました。'
+        : 'Skin appeared smoother, more even, and visibly healthier—with a clean, natural glow even in photos.',
     },
     {
-      title: '50代女性・10時間後',
-      description: '寝る前にConfidenceを塗り、翌朝確認すると、たった10時間なのに炎症がかなり抑えられて、赤みも少なくなっていて驚きました。',
+      title: language === 'JP' ? '50代女性・10時間後' : 'Female, 50s · After 10 hours of use',
+      description: language === 'JP'
+        ? '寝る前にConfidenceを塗り、翌朝確認すると、たった10時間なのに炎症がかなり抑えられて、赤みも少なくなっていて驚きました。'
+        : "I had been struggling with redness and swelling that wouldn't go away. After applying it before bed, the dryness eased, and by morning the redness had noticeably calmed.",
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '怪我による炎症とかさぶた。',
-      afterText: 'Confidenceを塗布後わずか10時間で炎症がかなり抑えられました。',
+      beforeText: language === 'JP'
+        ? '怪我による炎症とかさぶた。'
+        : 'Circular red area near the wrist with scabbing and visible inflammation.',
+      afterText: language === 'JP'
+        ? 'Confidenceを塗布後わずか10時間で炎症がかなり抑えられました。'
+        : 'Skin appeared more hydrated and even-toned, with reduced redness and swelling.',
     },
     {
-      title: '50代女性・2日後',
-      description: '1ヶ月以上治らなかったやけどの痕が、2日も経たない間に傷跡が薄くなって、赤みも少なくなりました。',
+      title: language === 'JP' ? '50代女性・2日後' : 'Female, 50s · After 2 days of use',
+      description: language === 'JP'
+        ? '1ヶ月以上治らなかったやけどの痕が、2日も経たない間に傷跡が薄くなって、赤みも少なくなりました。'
+        : "My burn hadn't healed for over a month, but after applying it at night, the dryness eased. Within 48 hours, the redness visibly calmed down and my skin felt more comfortable.",
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '1ヶ月間改善しなかった腕のやけどや赤み、乾燥に悩まされていた。',
-      afterText: 'わずか2日で傷跡が目に見えて改善した。',
+      beforeText: language === 'JP'
+        ? '1ヶ月間改善しなかった腕のやけどや赤み、乾燥に悩まされていた。'
+        : "Persistent redness and dryness from an arm burn that hadn't improved for a month.",
+      afterText: language === 'JP'
+        ? 'わずか2日で傷跡が目に見えて改善した。'
+        : 'Skin looked clearer and healthier, with noticeably less irritation during daily activities.',
     },
   ]
 
