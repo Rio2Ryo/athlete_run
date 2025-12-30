@@ -70,7 +70,7 @@ export default function ProjectOverview() {
         </div>
 
         {/* Main Content - Single Block */}
-        <div className="p-8 mb-16">
+        <div className="p-0 md:p-8 mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Section - 01 */}
             <div className="flex flex-col">
@@ -84,7 +84,7 @@ export default function ProjectOverview() {
               </div>
               
               {/* 地球最初の生命体とは */}
-              <div className="p-4 md:p-6 flex-grow flex flex-col border border-green-400 rounded-lg w-[97%] md:w-full mx-auto">
+              <div className="p-4 md:p-6 flex-grow flex flex-col border border-green-400 rounded-lg w-[97vw] md:w-full mx-auto">
                 <div className="flex-grow">
                   <div className="flex justify-center my-6">
                     <div>
@@ -193,7 +193,7 @@ we offer the following three types of Mother Vegetable products:`
               </div>
 
                {/* 驚異的なカーボンクレジット */}
-              <div className="p-4 md:p-6 border border-green-400 rounded-lg flex-grow flex flex-col w-[97%] md:w-full mx-auto">
+              <div className="p-4 md:p-6 border border-green-400 rounded-lg flex-grow flex flex-col w-[97vw] md:w-full mx-auto">
                 <div className="flex-grow">
                   <div className="my-6">
                     <h3 className="text-green-400 text-xl md:text-2xl font-semibold text-center mb-10">
