@@ -141,11 +141,11 @@ export default function IndustryApproach() {
         {/* Nutrient Section Container */}
         <div className="max-w-3xl mx-auto px-0 md:px-4">
           {/* Nutrient Circles */}
-          <div className="flex justify-between items-center mb-8 md:mb-12">
+          <div className="flex justify-between items-center gap-1 md:gap-0 mb-8 md:mb-12">
             {nutrients.map((nutrient, index) => (
               <div
                 key={index}
-                className="w-16 h-16 md:w-32 md:h-32 rounded-full flex flex-col items-center justify-center text-center"
+                className="w-[18%] aspect-square md:w-32 md:h-32 rounded-full flex flex-col items-center justify-center text-center"
                 style={{ backgroundColor: '#4a9d7c' }}
               >
                 {nutrient.nameMobile ? (
