@@ -121,14 +121,15 @@ export default function Header() {
         />
         {/* Slide-in menu from right */}
         <div
-          className={`absolute top-0 right-0 h-full w-[80%] border-l-2 border-[#4ade80] transition-transform duration-300 ease-out ${
+          className={`absolute top-0 right-0 w-[80%] border-l-2 border-[#4ade80] transition-transform duration-300 ease-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
+          style={{ height: '100vh' }}
         >
           {/* Black background layer */}
-          <div className="absolute inset-0 bg-black" style={{ backgroundColor: '#000' }} />
+          <div className="absolute inset-0 bg-black" style={{ backgroundColor: '#000', height: '100vh' }} />
           {/* Content */}
-          <div className="relative z-10 h-full">
+          <div className="relative z-10" style={{ height: '100vh' }}>
             {/* Close button */}
             <div className="flex justify-end p-4">
               <button
