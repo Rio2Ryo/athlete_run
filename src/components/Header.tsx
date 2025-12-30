@@ -71,22 +71,54 @@ export default function Header() {
               Products
             </button>
 
-            <button
-              onClick={() => setLanguage(language === 'EN' ? 'JP' : 'EN')}
-              className="px-3 md:px-4 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300 border border-gray-600 rounded-md"
-            >
-              {language === 'EN' ? 'EN' : 'JP'}
-            </button>
+            <div className="flex items-center border border-gray-600 rounded-md overflow-hidden">
+              <button
+                onClick={() => setLanguage('EN')}
+                className={`px-3 py-1.5 text-sm transition-all duration-300 ${
+                  language === 'EN'
+                    ? 'bg-[#4ade80] text-black font-bold'
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage('JP')}
+                className={`px-3 py-1.5 text-sm transition-all duration-300 ${
+                  language === 'JP'
+                    ? 'bg-[#4ade80] text-black font-bold'
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                JP
+              </button>
+            </div>
           </nav>
 
           {/* Mobile: Language Button + Hamburger */}
           <div className="flex md:hidden items-center space-x-2">
-            <button
-              onClick={() => setLanguage(language === 'EN' ? 'JP' : 'EN')}
-              className="px-3 py-2 text-sm text-[#4ade80] hover:text-green-600 transition-all duration-300 border border-gray-600 rounded-md"
-            >
-              {language === 'EN' ? 'EN' : 'JP'}
-            </button>
+            <div className="flex items-center border border-gray-600 rounded-md overflow-hidden">
+              <button
+                onClick={() => setLanguage('EN')}
+                className={`px-2 py-1.5 text-xs transition-all duration-300 ${
+                  language === 'EN'
+                    ? 'bg-[#4ade80] text-black font-bold'
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage('JP')}
+                className={`px-2 py-1.5 text-xs transition-all duration-300 ${
+                  language === 'JP'
+                    ? 'bg-[#4ade80] text-black font-bold'
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                JP
+              </button>
+            </div>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-[#4ade80] hover:text-green-600 transition-all duration-300"
