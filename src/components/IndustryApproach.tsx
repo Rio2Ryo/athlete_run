@@ -63,7 +63,7 @@ export default function IndustryApproach() {
   ]
 
   return (
-    <section className="pb-5 pt-10 md:pb-5 md:pt-12 bg-black">
+    <section id="products" className="pb-5 pt-10 md:pb-5 md:pt-12 bg-black">
       <div
         className="mx-auto px-4 md:px-8 py-8 md:py-12 w-[97%] md:w-[90%]"
         style={{
