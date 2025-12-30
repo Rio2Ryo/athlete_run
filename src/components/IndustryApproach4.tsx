@@ -103,44 +103,44 @@ export default function IndustryApproach() {
       afterText: '大きなシミは完全に消えて、全体的にシミの色が薄くなった。',
     },
     {
-      title: '50代女性・3週間後',
-      description: '年を重ねるにつれて頬のシミが気になっていたのですが、3週間ほど塗い続けると、シミが目立たなくなり、肌もトーンアップして自信を持てるようになりました。',
+      title: '40代女性・3日後',
+      description: '処方クリームに混ぜて使い始めると、3日後にはひび割れがなくなって、赤みが目立たなくなってきました。かゆみも少なくなって、今はすごく快適です。これからも使い続けます。',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '頬のシミが目立ち、メイク崩れも気になっていた。',
-      afterText: 'シミが目立たなくなり、自然なトーンアップを実現。メイクの持ちも良くなった。',
+      beforeText: '乾燥による痒みやカサつきに悩んでいた。',
+      afterText: '痒みがおさまり、カサつきもなくなったので快適そうです。',
     },
     {
-      title: '80代女性・1ヶ月後',
-      description: 'ずっと治らなかったシミが、1ヶ月間塗り込んで使用すると徐々に薄くなり、大きなシミは気にならなくなりました。年を重ねても、Confidenceで適切にケアすれば改善するのを実感しました。',
+      title: '10歳男の子・10日後',
+      description: 'カサつきと痒みに悩んでいましたが、ステロイドを使うのは避けたかったので、Confidenceでケアをしていました。すると、わずか10日で痒みやカサつきが治まり、今はすごく快適そうです。',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '腕にある複数のシミがずっと治らなかった。',
-      afterText: '大きなシミは完全に消えて、全体的にシミの色が薄くなった。',
+      beforeText: '乾燥による痒みやカサつきに悩んでいた。',
+      afterText: '痒みがおさまり、カサつきもなくなったので快適そうです。',
     },
     {
-      title: '50代女性・3週間後',
-      description: '年を重ねるにつれて頬のシミが気になっていたのですが、3週間ほど塗い続けると、シミが目立たなくなり、肌もトーンアップして自信を持てるようになりました。',
+      title: '5歳男の子・2日後',
+      description: '硬水の刺激や乾燥で赤みが出ていましたが、ハンドクリームと一緒に使い始めると、たった2日で目に見えて症状が治まりました。',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '頬のシミが目立ち、メイク崩れも気になっていた。',
-      afterText: 'シミが目立たなくなり、自然なトーンアップを実現。メイクの持ちも良くなった。',
+      beforeText: '手首から手の甲にかけて目に見える赤みと乾燥。',
+      afterText: '赤みがなくなり、乾燥も抑えられました。',
     },
     {
-      title: '80代女性・1ヶ月後',
-      description: 'ずっと治らなかったシミが、1ヶ月間塗り込んで使用すると徐々に薄くなり、大きなシミは気にならなくなりました。年を重ねても、Confidenceで適切にケアすれば改善するのを実感しました。',
+      title: '50代女性・10時間後',
+      description: '寝る前にConfidenceを塗り、翌朝確認すると、たった10時間なのに炎症がかなり抑えられて、赤みも少なくなっていて驚きました。',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '腕にある複数のシミがずっと治らなかった。',
-      afterText: '大きなシミは完全に消えて、全体的にシミの色が薄くなった。',
+      beforeText: '怪我による炎症とかさぶた。',
+      afterText: 'Confidenceを塗布後わずか10時間で炎症がかなり抑えられました。',
     },
     {
-      title: '50代女性・3週間後',
-      description: '年を重ねるにつれて頬のシミが気になっていたのですが、3週間ほど塗い続けると、シミが目立たなくなり、肌もトーンアップして自信を持てるようになりました。',
+      title: '50代女性・2日後',
+      description: '1ヶ月以上治らなかったやけどの痕が、2日も経たない間に傷跡が薄くなって、赤みも少なくなりました。',
       beforeImage: '/before6.png',
       afterImage: '/after6.png',
-      beforeText: '頬のシミが目立ち、メイク崩れも気になっていた。',
-      afterText: 'シミが目立たなくなり、自然なトーンアップを実現。メイクの持ちも良くなった。',
+      beforeText: '1ヶ月間改善しなかった腕のやけどや赤み、乾燥に悩まされていた。',
+      afterText: 'わずか2日で傷跡が目に見えて改善した。',
     },
   ]
 
@@ -388,25 +388,25 @@ export default function IndustryApproach() {
                     </div>
 
                     {/* Before/After Labels */}
-                    <div className="flex justify-center gap-4 mb-4">
-                      <span className="px-4 py-1 bg-gray-800 text-white text-xs md:text-sm rounded">
+                    <div className="flex justify-center gap-2 mb-4">
+                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded border border-gray-600">
                         Before
                       </span>
-                      <span className="px-4 py-1 bg-gray-800 text-white text-xs md:text-sm rounded">
+                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded border border-gray-600">
                         After
                       </span>
                     </div>
 
                     {/* Before Text */}
-                    <div className="border border-[#25c760] rounded p-3 mb-3">
-                      <h4 className="text-[#25c760] text-sm font-bold mb-1">Before</h4>
-                      <p className="text-white text-xs md:text-sm">{item.beforeText}</p>
+                    <div className="bg-[#0d1f1a] border-l-2 border-[#25c760] p-4 mb-3 rounded-r">
+                      <h4 className="text-[#25c760] text-sm font-bold mb-2">Before</h4>
+                      <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{item.beforeText}</p>
                     </div>
 
                     {/* After Text */}
-                    <div className="border border-[#25c760] rounded p-3">
-                      <h4 className="text-[#25c760] text-sm font-bold mb-1">After</h4>
-                      <p className="text-white text-xs md:text-sm">{item.afterText}</p>
+                    <div className="bg-[#0d1f1a] border-l-2 border-[#25c760] p-4 rounded-r">
+                      <h4 className="text-[#25c760] text-sm font-bold mb-2">After</h4>
+                      <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{item.afterText}</p>
                     </div>
                   </div>
                 ))}
