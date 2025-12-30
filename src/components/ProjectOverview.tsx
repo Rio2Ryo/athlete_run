@@ -58,9 +58,9 @@ export default function ProjectOverview() {
             <div className="block md:hidden leading-[2] text-[10px] text-center px-4">
               {language === 'JP' ? (
                 <>
-                  <p className="mb-4">MOTHER VEGETABLE PROJECTは<br />2つのオンリーワン事業を中心として地球とすべての生命の回復を目<br />指す世界唯一のプロジェクトです。</p>
-                  <p className="mb-4">このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成<br />することで大気を浄化します。<br />それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業<br />により、人間と生物の健康向上に貢献します。</p>
-                  <p>またその施設を世界各地に展開することで、さらに8つの産業分野に<br />発展することが可能です。</p>
+                  <p className="mb-4">MOTHER VEGETABLE PROJECTは2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。</p>
+                  <p className="mb-4">このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成することで大気を浄化します。それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。</p>
+                  <p>またその施設を世界各地に展開することで、さらに8つの産業分野に発展することが可能です。</p>
                 </>
               ) : (
                 <>
