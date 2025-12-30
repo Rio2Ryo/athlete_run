@@ -63,26 +63,26 @@ export default function IndustryApproach() {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-center text-white text-sm md:text-xl italic mb-4">
+        <p className="text-center text-white text-sm md:text-xl mb-4">
           Achieve / Forever
         </p>
 
         <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-8 opacity-80"></div>
 
         {/* TORIKOMU / MAZEKOMU */}
-        <p className="text-center text-red-600 text-xs md:text-sm mb-2">
+        <p className="text-center text-red-600 text-xs md:text-sm mb-2 font-semibold">
           TORIKOMU / MAZEKOMU
         </p>
 
         {/* Food Video */}
-        <div className="flex justify-center mb-6 md:mb-10">
+        <div className="flex justify-center">
           <video
             src="/food_video.mov"
             autoPlay
             loop
             muted
             playsInline
-            className="h-24 md:h-40 w-auto object-contain rounded-lg"
+            className="h-24 md:h-24 w-auto object-contain rounded-lg"
           />
         </div>
 
@@ -130,11 +130,11 @@ export default function IndustryApproach() {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-2 gap-4 md:gap-8 mt-12 md:mt-16 px-2 md:px-8">
+        <div className="grid grid-cols-2 gap-6 md:gap-10 mt-12 md:mt-16 px-4 md:px-12">
           {categories.map((category, index) => (
-            <div key={index} className="flex items-start gap-2 md:gap-4">
+            <div key={index} className="flex items-start gap-3 md:gap-6">
               {/* Silhouette Image */}
-              <div className="flex-shrink-0 w-16 h-20 md:w-24 md:h-32">
+              <div className="flex-shrink-0 w-20 h-28 md:w-32 md:h-44">
                 <img
                   src={category.image}
                   alt={category.title}
@@ -145,18 +145,19 @@ export default function IndustryApproach() {
               {/* Text Content */}
               <div className="flex-1">
                 <h4
-                  className="text-sm md:text-xl font-bold mb-2 md:mb-3"
+                  className="text-base md:text-2xl font-bold mb-1"
                   style={{ color: '#25c760' }}
                 >
                   {category.title}
                 </h4>
-                <ul className="space-y-0.5 md:space-y-1">
+                <div className="w-full h-0.5 bg-gradient-to-r from-green-500 to-transparent mb-3 md:mb-4"></div>
+                <ul className="space-y-1 md:space-y-2">
                   {category.benefits.map((benefit, idx) => (
                     <li
                       key={idx}
-                      className="text-white text-[9px] md:text-sm flex items-start"
+                      className="text-white text-xs md:text-base flex items-start"
                     >
-                      <span className="mr-1 md:mr-2 text-white">●</span>
+                      <span className="mr-2 md:mr-3 text-white">●</span>
                       {benefit}
                     </li>
                   ))}
