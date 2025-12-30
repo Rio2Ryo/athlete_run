@@ -14,32 +14,32 @@ export default function IndustryApproach() {
   const categories = [
     {
       title: 'チルドレン',
-      image: '/silhouette_children.png',
+      image: '/children.png',
       benefits: ['集中力向上', '学習能力向上', '骨の成長サポート', '免疫力向上', '食欲向上'],
     },
     {
       title: 'アダルト',
-      image: '/silhouette_adult.png',
+      image: '/alduts.png',
       benefits: ['便秘・消化不良改善', '睡眠の質向上', '疲れの軽減', '細胞老化・炎症の抑制', 'ダイエット'],
     },
     {
       title: 'シニア',
-      image: '/silhouette_senior.png',
+      image: '/seniors.png',
       benefits: ['睡眠の質向上', '血液循環の改善', '食欲向上・栄養補給', '内臓機能のサポート'],
     },
     {
       title: 'アスリート',
-      image: '/silhouette_athlete.png',
+      image: '/athletes.png',
       benefits: ['添加物のデトックス', '筋肉疲労回復・持続力向上', '効率的な栄養補給', '炎症回復・抑制', 'トレーニング効果の向上'],
     },
     {
       title: 'ドッグ',
-      image: '/silhouette_dog.png',
+      image: '/dog.png',
       benefits: ['涙やけの改善', '糞尿のにおい改善', '食欲増強', '腸内環境の改善', '深い睡眠', '体臭改善'],
     },
     {
       title: 'キャット',
-      image: '/silhouette_cat.png',
+      image: '/cat.png',
       benefits: ['涙やけの改善', '糞尿のにおい改善', '食欲増強', '腸内環境の改善', '深い睡眠', '体臭改善'],
     },
   ]
@@ -70,49 +70,64 @@ export default function IndustryApproach() {
         <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-8 opacity-80"></div>
 
         {/* TORIKOMU / MAZEKOMU */}
-        <p className="text-center text-[#25c760] text-xs md:text-sm mb-2">
+        <p className="text-center text-red-600 text-xs md:text-sm mb-2">
           TORIKOMU / MAZEKOMU
         </p>
 
-        {/* Spoon Image */}
+        {/* Food Video */}
         <div className="flex justify-center mb-6 md:mb-10">
-          <img
-            src="/spoon.png"
-            alt="Spoon with spirulina"
-            className="h-16 md:h-24 w-auto object-contain"
+          <video
+            src="/food_video.mov"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-24 md:h-40 w-auto object-contain rounded-lg"
           />
         </div>
 
-        {/* Nutrient Circles */}
-        <div className="flex justify-center items-center gap-2 md:gap-6 mb-8 md:mb-12 flex-wrap">
-          {nutrients.map((nutrient, index) => (
-            <div
-              key={index}
-              className="w-16 h-16 md:w-28 md:h-28 rounded-full flex flex-col items-center justify-center text-center"
-              style={{ backgroundColor: '#4a9d7c' }}
-            >
-              <span className="text-white text-[8px] md:text-sm font-medium leading-tight">
-                {nutrient.name}
-              </span>
-              <span className="text-white text-[8px] md:text-sm">
-                {nutrient.count}
-              </span>
-            </div>
-          ))}
+        {/* Bracket Image */}
+        <div className="flex justify-center mb-4 md:mb-6">
+          <img
+            src="/bracket_v2.png"
+            alt="Bracket"
+            className="w-[80%] md:w-[60%] max-w-2xl object-contain"
+          />
         </div>
 
-        {/* 48 Nutrients Title */}
-        <h3
-          className="text-lg md:text-3xl font-bold text-center mb-4 md:mb-6"
-          style={{ color: '#25c760' }}
-        >
-          48 Nutrients
-        </h3>
+        {/* Nutrient Section Container */}
+        <div className="max-w-3xl mx-auto px-2 md:px-4">
+          {/* Nutrient Circles */}
+          <div className="flex justify-between items-center mb-8 md:mb-12">
+            {nutrients.map((nutrient, index) => (
+              <div
+                key={index}
+                className="w-14 h-14 md:w-28 md:h-28 rounded-full flex flex-col items-center justify-center text-center"
+                style={{ backgroundColor: '#4a9d7c' }}
+              >
+                <span className="text-white text-[7px] md:text-sm font-medium leading-tight">
+                  {nutrient.name}
+                </span>
+                <span className="text-white text-[7px] md:text-sm">
+                  {nutrient.count}
+                </span>
+              </div>
+            ))}
+          </div>
 
-        {/* Nutrients List */}
-        <p className="text-gray-300 text-[10px] md:text-sm text-center leading-relaxed px-2 md:px-8">
-          {nutrientsList}
-        </p>
+          {/* 48 Nutrients Title */}
+          <h3
+            className="text-lg md:text-3xl font-bold text-center mb-4 md:mb-6"
+            style={{ color: '#25c760' }}
+          >
+            48 Nutrients
+          </h3>
+
+          {/* Nutrients List */}
+          <p className="text-gray-300 text-[10px] md:text-sm text-center leading-relaxed">
+            {nutrientsList}
+          </p>
+        </div>
 
         {/* Categories Grid */}
         <div className="grid grid-cols-2 gap-4 md:gap-8 mt-12 md:mt-16 px-2 md:px-8">
@@ -130,7 +145,7 @@ export default function IndustryApproach() {
               {/* Text Content */}
               <div className="flex-1">
                 <h4
-                  className="text-sm md:text-xl font-bold mb-2 md:mb-3 italic"
+                  className="text-sm md:text-xl font-bold mb-2 md:mb-3"
                   style={{ color: '#25c760' }}
                 >
                   {category.title}
@@ -141,7 +156,7 @@ export default function IndustryApproach() {
                       key={idx}
                       className="text-white text-[9px] md:text-sm flex items-start"
                     >
-                      <span className="mr-1 md:mr-2" style={{ color: '#25c760' }}>●</span>
+                      <span className="mr-1 md:mr-2 text-white">●</span>
                       {benefit}
                     </li>
                   ))}
