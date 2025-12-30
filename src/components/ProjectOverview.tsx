@@ -121,7 +121,7 @@ we offer the following three types of Mother Vegetable products:`
                 </div>
 
                 <div className="mt-6">
-                  <div className="relative w-1/2 mx-auto">
+                  <div className="relative w-[65%] md:w-1/2 mx-auto">
                     <video
                       ref={videoRef1}
                       className="w-full h-auto rounded-lg"
@@ -244,7 +244,7 @@ we offer the following three types of Mother Vegetable products:`
                 </div>
 
                 <div className="mt-6">
-                  <div className="relative w-1/2 mx-auto">
+                  <div className="relative w-[65%] md:w-1/2 mx-auto">
                     <video
                       ref={videoRef2}
                       className="w-full h-auto rounded-lg"

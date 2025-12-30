@@ -341,25 +341,25 @@ export default function IndustryApproach() {
           <div className="text-center mb-6 md:mb-8 px-4">
             {language === 'JP' ? (
               <>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   世界の医療機関にて医薬品として手術後の傷の修復、
                 </p>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   やけど跡の改善、がんの治療、肌のテカりなどに使用されている
                 </p>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   医薬部外品認定マザーベジタブルによる肌の治癒が可能。
                 </p>
               </>
             ) : (
               <>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   Mother Vegetable, certified as a medical-grade quasi-drug, is trusted by medical institutions worldwide
                 </p>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   for its healing properties — used in post-surgery recovery, burn scar improvement, cancer care, and even
                 </p>
-                <p className="text-white text-sm md:text-lg leading-relaxed">
+                <p className="text-white text-[10px] md:text-base leading-relaxed">
                   to help control skin shine. It supports the skin's natural ability to heal and restore balance.
                 </p>
               </>
