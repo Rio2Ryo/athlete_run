@@ -367,7 +367,7 @@ export default function IndustryApproach() {
                 {beforeAfterData.map((item, index) => (
                   <div
                     key={index}
-                    className="border border-[#25c760] rounded-lg p-4"
+                    className="border border-[#25c760] rounded-lg p-4 bg-[#131217]"
                   >
                     {/* Card Title */}
                     <h3 className="text-[#25c760] text-base md:text-lg font-bold mb-2">
@@ -389,22 +389,22 @@ export default function IndustryApproach() {
 
                     {/* Before/After Labels */}
                     <div className="flex justify-center gap-2 mb-4">
-                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded border border-gray-600">
+                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded-full border border-green-400">
                         Before
                       </span>
-                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded border border-gray-600">
+                      <span className="px-5 py-1.5 bg-[#1a1a1a] text-white text-xs md:text-sm rounded-full border border-green-400">
                         After
                       </span>
                     </div>
 
                     {/* Before Text */}
-                    <div className="bg-[#0d1f1a] border-l-2 border-[#25c760] p-4 mb-3 rounded-r">
+                    <div className="bg-[#000]  p-4 mb-3 rounded-r">
                       <h4 className="text-[#25c760] text-sm font-bold mb-2">Before</h4>
                       <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{item.beforeText}</p>
                     </div>
 
                     {/* After Text */}
-                    <div className="bg-[#0d1f1a] border-l-2 border-[#25c760] p-4 rounded-r">
+                    <div className="bg-[#0d1f1a] p-4 rounded-r">
                       <h4 className="text-[#25c760] text-sm font-bold mb-2">After</h4>
                       <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{item.afterText}</p>
                     </div>
