@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import AthleteImage from '@/components/AthleteImage'
 import ProjectOverview from '@/components/ProjectOverview'
 import IndustryApproach from '@/components/IndustryApproach'
 import IndustryApproach2 from '@/components/IndustryApproach2'
@@ -33,6 +34,7 @@ export default function Home() {
       <main className="min-h-screen text-white relative">
         <Header />
         <Hero />
+        <AthleteImage />
         <IndustryApproach />
         <IndustryApproach2 />
         <IndustryApproach3 />
