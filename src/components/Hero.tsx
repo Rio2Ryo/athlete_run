@@ -74,10 +74,10 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-40 md:pt-48 lg:pt-56">
         {/* Title Section - Single Component */}
-        <div className="mb-12">
+        <div className="mb-12 relative">
 
           {/* Logo */}
-          <div className="mb-6">
+          <div className="mb-6" style={{ position: 'relative', zIndex: 10 }}>
             <Image
               src="/mazavege_logo_midori.png"
               alt="Mother Vegetable Logo"
@@ -88,6 +88,191 @@ export default function Hero() {
             />
           </div>
 
+          {/* Video, Image and Text Block - Positioned to the right */}
+          {/* Mobile version */}
+          <div
+            className="block md:hidden"
+            style={{
+              position: 'absolute',
+              top: '-15px',
+              right: '0px',
+              zIndex: 0,
+            }}
+          >
+            {/* Circular Video */}
+            <div
+              style={{
+                width: '70px',
+                height: '70px',
+                position: 'relative',
+              }}
+            >
+              <div
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  position: 'relative',
+                }}
+              >
+                <video
+                  src="/mv.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: '110%',
+                    height: '110%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                />
+              </div>
+              {/* Blur ring overlay */}
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: '-5px',
+                  borderRadius: '50%',
+                  pointerEvents: 'none',
+                  backdropFilter: 'blur(5px)',
+                  WebkitBackdropFilter: 'blur(5px)',
+                  WebkitMaskImage: 'radial-gradient(circle, transparent 45%, black 70%)',
+                  maskImage: 'radial-gradient(circle, transparent 45%, black 70%)',
+                }}
+              />
+
+            </div>
+
+            {/* Nagahara image - bottom right of video */}
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '-15px',
+                right: '-10px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <Image
+                src="/nagahara_2.png"
+                alt="Nagahara"
+                width={20}
+                height={20}
+                className="rounded"
+                style={{ objectFit: 'cover' }}
+              />
+              {/* Text below image */}
+              <p className="text-[5px] text-white mt-0.5 text-center whitespace-nowrap">
+                <span>{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}<br /></span>
+                {t({
+                  JP: 'バドミントン世界選手権\n2連覇',
+                  EN: '2-TIME WORLD\nBADMINTON CHAMPION'
+                }).split('\n').map((line, i) => (
+                  <span key={i}>{line}<br /></span>
+                ))}
+              </p>
+            </div>
+          </div>
+
+          {/* Desktop version */}
+          <div
+            className="hidden md:block"
+            style={{
+              position: 'absolute',
+              top: '-60px',
+              right: '-55%',
+              zIndex: 0,
+            }}
+          >
+            {/* Circular Video */}
+            <div
+              style={{
+                width: '280px',
+                height: '280px',
+                position: 'relative',
+              }}
+            >
+              <div
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  position: 'relative',
+                }}
+              >
+                <video
+                  src="/mv.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: '110%',
+                    height: '110%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                />
+              </div>
+              {/* Blur ring overlay */}
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: '-10px',
+                  borderRadius: '50%',
+                  pointerEvents: 'none',
+                  backdropFilter: 'blur(8px)',
+                  WebkitBackdropFilter: 'blur(8px)',
+                  WebkitMaskImage: 'radial-gradient(circle, transparent 45%, black 70%)',
+                  maskImage: 'radial-gradient(circle, transparent 45%, black 70%)',
+                }}
+              />
+            </div>
+
+            {/* Nagahara image and text - bottom right */}
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '-20px',
+                right: '0px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <Image
+                src="/nagahara_2.png"
+                alt="Nagahara"
+                width={50}
+                height={50}
+                className="rounded-lg"
+                style={{ objectFit: 'cover' }}
+              />
+              <p className="text-[10px] text-white mt-1 text-center">
+                <span>{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}<br /></span>
+                {t({
+                  JP: 'バドミントン世界選手権\n2連覇',
+                  EN: '2-TIME WORLD\nBADMINTON CHAMPION'
+                }).split('\n').map((line, i) => (
+                  <span key={i}>{line}<br /></span>
+                ))}
+              </p>
+            </div>
+          </div>
+
           <div
             className="inline-block"
             style={{
@@ -96,6 +281,8 @@ export default function Hero() {
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
               filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(34, 197, 94, 0.2))',
+              position: 'relative',
+              zIndex: 1,
             }}
           >
             <h1 className="text-sm sm:text-2xl md:text-3xl lg:text-3xl font-semibold leading-tight">
@@ -126,7 +313,7 @@ export default function Hero() {
             <p className="text-xs md:text-xl text-[#4ade80] leading-relaxed">
               {t({
                 JP: '地球が生み出した生命力を、あなたに。',
-                EN: 'Earth’s life force, for you.'
+                EN: "Earth's life force, for you."
               })}
             </p>
           </div>
