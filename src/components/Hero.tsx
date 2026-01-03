@@ -95,7 +95,7 @@ export default function Hero() {
             style={{
               position: 'absolute',
               top: '-80px',
-              right: '5px',
+              right: '-30px',
               zIndex: 0,
             }}
           >
@@ -189,7 +189,7 @@ export default function Hero() {
             style={{
               position: 'absolute',
               top: '-100px',
-              right: '-50%',
+              right: '-65%',
               zIndex: 0,
             }}
           >
