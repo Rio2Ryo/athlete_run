@@ -77,13 +77,13 @@ export default function Hero() {
         <div className="mb-4 relative">
 
           {/* Logo */}
-          <div className="mb-6" style={{ position: 'relative', zIndex: 10 }}>
+          <div className="mb-3" style={{ position: 'relative', zIndex: 10 }}>
             <Image
               src="/mazavege_logo_midori.png"
               alt="Mother Vegetable Logo"
-              width={140}
-              height={140}
-              className="mx-auto w-12 h-12 sm:w-32 sm:h-32 md:w-32 md:h-32"
+              width={100}
+              height={100}
+              className="mx-auto w-8 h-8 sm:w-20 sm:h-20 md:w-24 md:h-24"
               priority
             />
           </div>
@@ -100,12 +100,12 @@ export default function Hero() {
               zIndex: 1,
             }}
           >
-            <h1 className="text-sm sm:text-2xl md:text-3xl lg:text-3xl font-semibold leading-tight">
+            <h1 className="text-xs sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight">
               <div>MOTHER VEGETABLE PROJECT</div>
             </h1>
           </div>
 
-          <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 opacity-80"></div>
+          <div className="w-32 md:w-40 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-3 opacity-80"></div>
 
         </div>
 
@@ -116,13 +116,13 @@ export default function Hero() {
         */}
         
         {/* Mobile version */}
-        <div className="block md:hidden flex justify-center mb-6">
+        <div className="block md:hidden flex flex-col items-center mb-6">
           <div style={{ position: 'relative' }}>
-            {/* Nagahara image - main circle (swapped with video) */}
+            {/* Nagahara image - main circle */}
             <div
               style={{
-                width: '160px',
-                height: '160px',
+                width: '200px',
+                height: '200px',
                 position: 'relative',
               }}
             >
@@ -159,14 +159,14 @@ export default function Hero() {
               />
             </div>
 
-            {/* Video - bottom right of photo (swapped position) */}
+            {/* Video - top right of photo */}
             <div
               style={{
                 position: 'absolute',
-                bottom: '-15px',
-                right: '-35px',
-                width: '60px',
-                height: '60px',
+                top: '-15px',
+                right: '-30px',
+                width: '70px',
+                height: '70px',
                 borderRadius: '50%',
                 overflow: 'hidden',
               }}
@@ -190,22 +190,22 @@ export default function Hero() {
             </div>
           </div>
           {/* Name and title below the photo */}
-          <div className="absolute" style={{ bottom: '-40px', left: '50%', transform: 'translateX(-50%)' }}>
-            <p className="text-[8px] text-white text-center leading-tight">
-              <span className="text-[10px] font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
-              <span className="text-green-400">{t({ JP: '世界選手権2連覇', EN: '2x World Champion' })}</span>
+          <div className="mt-3 text-center">
+            <p className="text-sm text-white leading-tight">
+              <span className="text-base font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
+              <span className="text-green-400 text-xs">{t({ JP: '世界選手権2連覇', EN: '2x World Champion' })}</span>
             </p>
           </div>
         </div>
 
         {/* Desktop version */}
-        <div className="hidden md:flex justify-center mb-8">
+        <div className="hidden md:flex flex-col items-center mb-8">
           <div style={{ position: 'relative' }}>
-            {/* Nagahara image - main circle (swapped with video) */}
+            {/* Nagahara image - main circle */}
             <div
               style={{
-                width: '220px',
-                height: '220px',
+                width: '280px',
+                height: '280px',
                 position: 'relative',
               }}
             >
@@ -242,14 +242,14 @@ export default function Hero() {
               />
             </div>
 
-            {/* Video - bottom right of photo (swapped position) */}
+            {/* Video - top right of photo */}
             <div
               style={{
                 position: 'absolute',
-                bottom: '-20px',
-                right: '-50px',
-                width: '80px',
-                height: '80px',
+                top: '-20px',
+                right: '-40px',
+                width: '90px',
+                height: '90px',
                 borderRadius: '50%',
                 overflow: 'hidden',
               }}
@@ -273,10 +273,10 @@ export default function Hero() {
             </div>
           </div>
           {/* Name and title below the photo */}
-          <div className="absolute" style={{ bottom: '-55px', left: '50%', transform: 'translateX(-50%)' }}>
-            <p className="text-sm text-white text-center leading-tight">
-              <span className="text-base font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
-              <span className="text-green-400 text-xs">{t({ JP: 'バドミントン世界選手権 2連覇', EN: '2-Time World Badminton Champion' })}</span>
+          <div className="mt-4 text-center">
+            <p className="text-base text-white leading-tight">
+              <span className="text-lg font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
+              <span className="text-green-400 text-sm">{t({ JP: 'バドミントン世界選手権 2連覇', EN: '2-Time World Badminton Champion' })}</span>
             </p>
           </div>
         </div>
