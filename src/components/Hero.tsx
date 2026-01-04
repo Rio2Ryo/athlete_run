@@ -77,13 +77,13 @@ export default function Hero() {
         <div className="mb-4 relative">
 
           {/* Logo */}
-          <div className="mb-3" style={{ position: 'relative', zIndex: 10 }}>
+          <div className="mb-2" style={{ position: 'relative', zIndex: 10 }}>
             <Image
               src="/mazavege_logo_midori.png"
               alt="Mother Vegetable Logo"
               width={100}
               height={100}
-              className="mx-auto w-8 h-8 sm:w-20 sm:h-20 md:w-24 md:h-24"
+              className="mx-auto w-8 h-8 sm:w-20 sm:h-20 md:w-16 md:h-16"
               priority
             />
           </div>
@@ -100,12 +100,12 @@ export default function Hero() {
               zIndex: 1,
             }}
           >
-            <h1 className="text-xs sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight">
+            <h1 className="text-xs sm:text-lg md:text-base lg:text-lg font-semibold leading-tight">
               <div>MOTHER VEGETABLE PROJECT</div>
             </h1>
           </div>
 
-          <div className="w-32 md:w-40 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-3 opacity-80"></div>
+          <div className="w-32 md:w-32 h-0.5 md:h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-2 opacity-80"></div>
 
         </div>
 
@@ -209,8 +209,8 @@ export default function Hero() {
             {/* Nagahara image - main circle */}
             <div
               style={{
-                width: '360px',
-                height: '360px',
+                width: '420px',
+                height: '420px',
                 position: 'relative',
               }}
             >
