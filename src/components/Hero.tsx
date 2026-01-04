@@ -121,8 +121,8 @@ export default function Hero() {
             {/* Circular Video */}
             <div
               style={{
-                width: '130px',
-                height: '130px',
+                width: '160px',
+                height: '160px',
                 position: 'relative',
               }}
             >
