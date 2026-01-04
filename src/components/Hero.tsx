@@ -118,7 +118,7 @@ export default function Hero() {
         {/* Mobile version */}
         <div className="block md:hidden flex justify-center mb-6">
           <div style={{ position: 'relative' }}>
-            {/* Circular Video */}
+            {/* Nagahara image - main circle (swapped with video) */}
             <div
               style={{
                 width: '160px',
@@ -135,21 +135,12 @@ export default function Hero() {
                   position: 'relative',
                 }}
               >
-                <video
-                  src="/mv.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+                <Image
+                  src="/nagahara_2.png"
+                  alt="Nagahara"
+                  fill
                   style={{
-                    width: '110%',
-                    height: '110%',
                     objectFit: 'cover',
-                    display: 'block',
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
                   }}
                 />
               </div>
@@ -168,44 +159,49 @@ export default function Hero() {
               />
             </div>
 
-            {/* Nagahara image - bottom right of video */}
+            {/* Video - bottom right of photo (swapped position) */}
             <div
               style={{
                 position: 'absolute',
-                bottom: '-10px',
-                right: '-30px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                maxWidth: '70px',
+                bottom: '-15px',
+                right: '-35px',
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                overflow: 'hidden',
               }}
             >
-              <Image
-                src="/nagahara_2.png"
-                alt="Nagahara"
-                width={28}
-                height={28}
-                className="rounded"
-                style={{ objectFit: 'cover' }}
+              <video
+                src="/mv.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  width: '110%',
+                  height: '110%',
+                  objectFit: 'cover',
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                }}
               />
-              {/* Text below image */}
-              <p className="text-[5px] text-white mt-0.5 text-center leading-tight">
-                <span className="text-[6px]">{t({ JP: '永原 和可那', EN: 'W. Nagahara' })}<br /></span>
-                {t({
-                  JP: '世界選手権2連覇',
-                  EN: '2x World Champ'
-                }).split('\n').map((line, i) => (
-                  <span key={i}>{line}<br /></span>
-                ))}
-              </p>
             </div>
+          </div>
+          {/* Name and title below the photo */}
+          <div className="absolute" style={{ bottom: '-40px', left: '50%', transform: 'translateX(-50%)' }}>
+            <p className="text-[8px] text-white text-center leading-tight">
+              <span className="text-[10px] font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
+              <span className="text-green-400">{t({ JP: '世界選手権2連覇', EN: '2x World Champion' })}</span>
+            </p>
           </div>
         </div>
 
         {/* Desktop version */}
         <div className="hidden md:flex justify-center mb-8">
           <div style={{ position: 'relative' }}>
-            {/* Circular Video */}
+            {/* Nagahara image - main circle (swapped with video) */}
             <div
               style={{
                 width: '220px',
@@ -222,21 +218,12 @@ export default function Hero() {
                   position: 'relative',
                 }}
               >
-                <video
-                  src="/mv.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+                <Image
+                  src="/nagahara_2.png"
+                  alt="Nagahara"
+                  fill
                   style={{
-                    width: '110%',
-                    height: '110%',
                     objectFit: 'cover',
-                    display: 'block',
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
                   }}
                 />
               </div>
@@ -255,35 +242,42 @@ export default function Hero() {
               />
             </div>
 
-            {/* Nagahara image and text - bottom right */}
+            {/* Video - bottom right of photo (swapped position) */}
             <div
               style={{
                 position: 'absolute',
-                bottom: '-15px',
-                right: '-60px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
+                bottom: '-20px',
+                right: '-50px',
+                width: '80px',
+                height: '80px',
+                borderRadius: '50%',
+                overflow: 'hidden',
               }}
             >
-              <Image
-                src="/nagahara_2.png"
-                alt="Nagahara"
-                width={45}
-                height={45}
-                className="rounded-lg"
-                style={{ objectFit: 'cover' }}
+              <video
+                src="/mv.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  width: '110%',
+                  height: '110%',
+                  objectFit: 'cover',
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                }}
               />
-              <p className="text-[9px] text-white mt-1 text-center">
-                <span className="text-[11px]">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}<br /></span>
-                {t({
-                  JP: 'バドミントン世界選手権\n2連覇',
-                  EN: '2-TIME WORLD\nBADMINTON CHAMPION'
-                }).split('\n').map((line, i) => (
-                  <span key={i}>{line}<br /></span>
-                ))}
-              </p>
             </div>
+          </div>
+          {/* Name and title below the photo */}
+          <div className="absolute" style={{ bottom: '-55px', left: '50%', transform: 'translateX(-50%)' }}>
+            <p className="text-sm text-white text-center leading-tight">
+              <span className="text-base font-medium">{t({ JP: '永原 和可那', EN: 'Wakana Nagahara' })}</span><br />
+              <span className="text-green-400 text-xs">{t({ JP: 'バドミントン世界選手権 2連覇', EN: '2-Time World Badminton Champion' })}</span>
+            </p>
           </div>
         </div>
 
