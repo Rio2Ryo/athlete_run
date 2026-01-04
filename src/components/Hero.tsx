@@ -136,7 +136,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/nagahara_2.png"
+                  src="/nagahara_2_hd.png"
                   alt="Nagahara"
                   fill
                   style={{
@@ -224,7 +224,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/nagahara_2.png"
+                  src="/nagahara_2_hd.png"
                   alt="Nagahara"
                   fill
                   style={{
