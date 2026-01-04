@@ -116,7 +116,7 @@ export default function Hero() {
         */}
         
         {/* Mobile version */}
-        <div className="block md:hidden flex flex-col items-center mb-6">
+        <div className="block md:hidden flex flex-col items-center mt-6 mb-10">
           <div style={{ position: 'relative' }}>
             {/* Nagahara image - main circle */}
             <div
@@ -204,7 +204,7 @@ export default function Hero() {
         </div>
 
         {/* Desktop version */}
-        <div className="hidden md:flex flex-col items-center mb-8">
+        <div className="hidden md:flex flex-col items-center mt-8 mb-12">
           <div style={{ position: 'relative' }}>
             {/* Nagahara image - main circle */}
             <div
