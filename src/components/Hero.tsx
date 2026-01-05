@@ -164,9 +164,9 @@ export default function Hero() {
               style={{
                 position: 'absolute',
                 top: '10px',
-                right: '-35px',
-                width: '70px',
-                height: '70px',
+                right: '-20px',
+                width: '90px',
+                height: '90px',
                 borderRadius: '50%',
                 overflow: 'hidden',
               }}
