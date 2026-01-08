@@ -45,7 +45,7 @@ export default function AthleteTestimonial() {
           {/* Image */}
           <div className="mb-6 rounded-lg overflow-hidden">
             <Image
-              src="/voice.jpg"
+              src="/voice_image.png"
               alt={language === 'JP' ? '故郷と自然への想い' : 'Connection to hometown and nature'}
               width={800}
               height={450}
