@@ -196,9 +196,9 @@ export default function Hero() {
               <span className="text-green-400 text-sm">{t({ JP: 'キックボクシング団体', EN: 'Professional Kickboxing Organization' })}</span>
             </p>
             <p className="text-[10px] text-gray-300 mt-2 leading-relaxed max-w-[280px]">
-             {t({ JP: 'アテネオリンピック 4x400mリレー日本代表', EN: 'A stand-up combat ring built on "Shoot, Kick, Slash"' })}<br />
-              {t({ JP: '第3走者として日本過去最高順位の4位入賞に貢献', EN: "Expanding kickboxing's potential through intense battles" })}<br />
-              {t({ JP: '次世代アスリート育成・教育活動に尽力', EN: 'Partnering to balance environmental care and sports growth' })}
+             {t({ JP: 'アテネオリンピック 4x400mリレー日本代表', EN: 'Athens Olympics 4x400m Relay Japan National Team Member' })}<br />
+              {t({ JP: '第3走者として日本過去最高順位の4位入賞に貢献', EN: "Contributed to Japan's historic 4th place finish as the 3rd leg runner" })}<br />
+              {t({ JP: '次世代アスリート育成・教育活動に尽力', EN: 'Dedicated to developing next-generation athletes and education' })}
             </p>
           </div>
         </div>
@@ -284,9 +284,9 @@ export default function Hero() {
               <span className="text-green-400 text-base">{t({ JP: 'オリンピアン / プロスプリントコーチ', EN: 'Olympian / Professional Sprint Coach' })}</span>
             </p>
             <p className="text-xs text-gray-300 mt-3 leading-relaxed max-w-[400px]">
-              {t({ JP: 'アテネオリンピック 4x400mリレー日本代表', EN: 'A stand-up combat ring built on "Shoot, Kick, Slash"' })}<br />
-              {t({ JP: '第3走者として日本過去最高順位の4位入賞に貢献', EN: "Expanding kickboxing's potential through intense battles" })}<br />
-              {t({ JP: '次世代アスリート育成・教育活動に尽力', EN: 'Partnering to balance environmental care and sports growth' })}
+              {t({ JP: 'アテネオリンピック 4x400mリレー日本代表', EN: 'Athens Olympics 4x400m Relay Japan National Team Member' })}<br />
+              {t({ JP: '第3走者として日本過去最高順位の4位入賞に貢献', EN: "Contributed to Japan's historic 4th place finish as the 3rd leg runner" })}<br />
+              {t({ JP: '次世代アスリート育成・教育活動に尽力', EN: 'Dedicated to developing next-generation athletes and education' })}
             </p>
           </div>
         </div>
