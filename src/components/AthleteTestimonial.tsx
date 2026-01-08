@@ -66,10 +66,10 @@ export default function AthleteTestimonial() {
           {/* Name */}
           <div className="mt-6 text-right">
             <p className="text-[#25c760] text-sm md:text-base font-semibold">
-              {language === 'JP' ? 'KNOCK OUT' : 'KNOCK OUT'}
+              {language === 'JP' ? '伊藤 友広' : 'Tomohiro Ito'}
             </p>
             <p className="text-gray-400 text-[10px] md:text-xs">
-              {language === 'JP' ? 'キックボクシング団体' : 'Professional Kickboxing Organization'}
+              {language === 'JP' ? 'オリンピアン / プロスプリントコーチ' : 'Olympian / Professional Sprint Coach'}
             </p>
           </div>
         </div>
