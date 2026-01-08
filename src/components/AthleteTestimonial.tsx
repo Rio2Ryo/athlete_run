@@ -8,16 +8,16 @@ export default function AthleteTestimonial() {
 
   const paragraphs = language === 'JP'
     ? [
-        'ボクシングは怪我と隣り合わせの競技で、打撲や擦り傷、切り傷は避けられません。',
-        'しかしマザーベジタブルに出会い、患部に使用することで、これまで経験したことのない速さで回復し、大きな驚きを感じました。',
-        'さらに摂取してみると、体調が整い、練習時のパフォーマンスも向上しました。その結果、選手一人ひとりの調子が上がり、チーム全体の士気や競技力も高まり、良い選手が育つ好循環が生まれています。',
-        '加えて、使うほど環境にも優しいという点も魅力で、キックボクシングに取り組みながら地球の改善にもつながる点に共感が広がり、多くの人に支持されています。'
+        'マザーベジタブルに触れて最初に感じたのは、これは日本だけでなく、世界が抱える課題そのものに向き合っているプロジェクトだということでした。',
+        '競技のためだけではなく、もっと大きな視点で意味を持つ取り組みだと感じました。',
+        '実際に使ってみると、すべてオーガニックでありながら、体への実感がしっかりある。安心して使えるのはもちろん、効果効能の面でも「これは本物だな」と素直に思えました。',
+        'だからこそ今は、自分が関わっている子どもたちや、日々競技に向き合っているスポーツ選手に、心から勧めたいと感じています。競技力の向上だけでなく、将来の身体や環境のことまで考えたとき、マザーベジタブルは本当に価値のある選択だと思います。'
       ]
     : [
-        'Boxing inevitably involves injuries such as bruises, scrapes, and cuts.',
-        "However, after discovering Mother Vegetable and applying it to injured areas, I was surprised by how quickly the wounds recovered.",
-        'When I also tried taking it internally, my physical condition improved and my training performance increased. As a result, each athlete’s condition improved, team morale and overall performance rose, and a positive cycle began in which better athletes are developed.',
-        "Another appeal is that it becomes more environmentally friendly the more it is used. The idea of continuing kickboxing while also contributing to the improvement of the Earth has resonated with many people."
+        'The first thing I felt when I encountered Mother Vegetable was that this project is not only about Japan, but about addressing challenges faced by the world as a whole.',
+        "It’s not something meant solely for competition—I felt it carries meaning from a much broader, more meaningful perspective.",
+        'After actually using it, I was impressed by how it is completely organic yet delivers a clear, tangible effect on the body. It’s safe to use, and honestly, I felt, “This is the real thing.',
+        "That’s why I truly recommend Mother Vegetable to young athletes— for performance, long-term health, and the future."
       ]
 
   return (
